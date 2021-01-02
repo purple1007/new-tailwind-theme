@@ -1,5 +1,3 @@
-# My TailwindCSS-theme with wordpress
+# First Blog with tailwindCSS
 
-- theme form： [underscores.me/](https://underscores.me/)
-
-
+- From : [wp-tailwindcss-theme-boilerplate](https://github.com/mishterk/wp-tailwindcss-theme-boilerplate)
