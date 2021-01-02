@@ -4,7 +4,7 @@
  *
  * @link https://developer.wordpress.org/themes/basics/template-hierarchy/#search-result
  *
- * @package _s
+ * @package my-blog
  */
 
 get_header();
@@ -18,7 +18,7 @@ get_header();
 				<h1 class="page-title">
 					<?php
 					/* translators: %s: search query. */
-					printf( esc_html__( 'Search Results for: %s', '_s' ), '<span>' . get_search_query() . '</span>' );
+					printf( esc_html__( 'Search Results for: %s', 'my-blog' ), '<span>' . getmy-blogearch_query() . '</span>' );
 					?>
 				</h1>
 			</header><!-- .page-header -->
@@ -49,5 +49,5 @@ get_header();
 	</main><!-- #main -->
 
 <?php
-get_sidebar();
+getmy-blogidebar();
 get_footer();

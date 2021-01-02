@@ -46,7 +46,7 @@
 	-->
 
 	<rule ref="WordPress">
-		<!-- This rule does not apply here since the _s prefix should be changed by the theme author. -->
+		<!-- This rule does not apply here since the my-blog prefix should be changed by the theme author. -->
 		<exclude name="WordPress.NamingConventions.PrefixAllGlobals.ShortPrefixPassed"/>
 	</rule>
 	<rule ref="WPThemeReview"/>
@@ -61,7 +61,7 @@
 		 Multiple valid text domains can be provided as a comma-delimited list. -->
 	<rule ref="WordPress.WP.I18n">
 		<properties>
-			<property name="text_domain" type="array" value="_s"/>
+			<property name="text_domain" type="array" value="my-blog"/>
 		</properties>
 	</rule>
 
@@ -76,7 +76,7 @@
 	<!-- Set the minimum supported WP version. This is used by several sniffs.
 		 The minimum version set here should be in line with the minimum WP version
 		 as set in the "Requires at least" tag in the readme.txt file. -->
-	<config name="minimum_supported_wp_version" value="4.5"/>
+	<config name="minimummy-blogupported_wp_version" value="4.5"/>
 
 	<rule ref="WordPress.Arrays.MultipleStatementAlignment">
 		<properties>
@@ -93,7 +93,7 @@
 		 Multiple valid prefixes can be provided as a comma-delimited list. -->
 	<rule ref="WordPress.NamingConventions.PrefixAllGlobals">
 		<properties>
-			<property name="prefixes" type="array" value="_s" />
+			<property name="prefixes" type="array" value="my-blog" />
 		</properties>
 	</rule>
 
