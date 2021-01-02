@@ -1,7 +1,7 @@
 <?php
 
 
-namespace WpTailwindCssThemeBoilerplate;
+namespace MyBlogTheme;
 
 
 class View {
