@@ -1,0 +1,9 @@
+$module: '.customHome';
+
+
+#{$module} {
+  h1 {
+    @apply text-5xl text-primary font-extrabold mb-10
+  }
+
+}
