@@ -25,12 +25,14 @@
     "laravel-mix-purgecss": "^4.2.0",
     "laravel-mix-tailwind": "^0.1.0",
     "laravel-mix-versionhash": "1.0.8",
-    "postcss": "^7.0.35",
     "resolve-url-loader": "2.3.1",
     "sass": "^1.26.11",
     "sass-loader": "7.*",
-    "tailwindcss": "npm:@tailwindcss/postcss7-compat@^2.0.2",
     "vue-template-compiler": "^2.6.12"
   },
-  "dependencies": {}
+  "dependencies": {
+    "autoprefixer": "^10.1.0",
+    "postcss": "^8.2.2",
+    "tailwindcss": "^2.0.2"
+  }
 }
