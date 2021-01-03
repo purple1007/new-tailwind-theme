@@ -48,6 +48,10 @@ class AssetResolver {
 	 */
 	private static function get_manifest() {
 		if ( ! self::$manifest ) {
+			// local 
+			// $manifest = get_stylesheet_directory() . '/build/local-manifest.json';
+
+			// production
 			$manifest = get_stylesheet_directory() . '/build/mix-manifest.json';
 
 			if (
