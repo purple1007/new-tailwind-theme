@@ -22,3 +22,25 @@ $loader->addNamespace( 'MyBlogTheme', get_stylesheet_directory() . '/app' );
 View::$view_dir = get_stylesheet_directory() . '/templates/views';
 
 require get_stylesheet_directory() . '/includes/scripts-and-styles.php';
+
+?>
+
+<?php
+  add_theme_support('post-thumbnails')
+?>
+
+<!-- Filter the except length. -->
+
+<?php
+  function custom_excerpt_length( $length ) {
+    return 150;
+  }
+  add_filter( 'excerpt_length', 'custom_excerpt_length', 999 );
+
+  function wpdocs_excerpt_more( $more ) {
+    return '<a href="'.get_the_permalink().'" class="ml-2" rel="nofollow">Read more...</a>
+      ';
+  } 
+  add_filter( 'excerpt_more', 'wpdocs_excerpt_more' );
+
+?>

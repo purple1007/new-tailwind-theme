@@ -21,10 +21,10 @@
 	<?php wp_head(); ?>
 </head>
 
-<body <?php body_class(); ?>>
+<body <?php body_class(); ?> >
 <?php wp_body_open(); ?>
-<div id="page" class="site">
-	<header id="masthead" class="site-header">
+<div id="page" class="Site bg-primaryBg">
+	<header id="masthead" class="SiteHeader mb-10">
 		<nav id="site-navigation" class="main-navigation">
 		</nav><!-- #site-navigation -->
   </header>
