@@ -15,8 +15,8 @@ module.exports = {
         extend: {
             colors: {
                 link: {
-                    'default': '#3182ce',
-                    'hover': '#63b3ed',
+                    default: '#3182ce',
+                    hover: '#63b3ed',
                 }
             },
             fontSize: {

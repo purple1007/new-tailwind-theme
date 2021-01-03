@@ -19,7 +19,7 @@ $module: '.WysiwygAnchors';
 #{$module} {
   a {
     &, &:visited {
-      @apply text-link;
+      @apply text-link-default;
       transition: all 0.24s ease;
 
       &:hover,
