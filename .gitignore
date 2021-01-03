@@ -5,6 +5,12 @@ local.json
 .AppleDouble
 .LSOverride
 
+# build
+!build/
+build/css/
+build/js/
+!build/mix-mainifes.json
+
 # Thumbnails
 ._*
 
