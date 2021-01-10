@@ -1,5 +1,5 @@
 {
-  "/js/app.js": "/js/app.7be27e.js",
-  "/css/app.css": "/css/app.ac734f.css",
-  "/js/app.js.map": "/js/app.7be27e.js.map"
+  "/js/app.js": "production/js/app.7be27e.js",
+  "/css/app.css": "production/css/app.ac734f.css",
+  "/js/app.js.map": "production/js/app.7be27e.js.map"
 }
