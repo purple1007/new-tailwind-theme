@@ -1,0 +1,48 @@
+$module: '.CustomHome';
+
+#{$module} {
+  @apply pt-5 md:pt-20;
+
+  h1 {
+    @apply font-title text-4xl md:text-5xl md:leading-normal text-primary-base font-extrabold mb-10;
+  }
+
+  h2 {
+    @apply text-3xl md:text-4xl text-primary-base font-extrabold mt-8 mb-4 md:my-10 font-title;
+  }
+
+  .home-description {
+    @apply mb-10 md:mb-20;
+  }
+
+  .wp-block-columns {
+    @apply grid gap-6 md:grid-cols-2 md:gap-6;
+
+    .wp-block-column {
+      @apply m-0 mb-2 md:mb-8;
+
+      h3 {
+        @apply text-xl font-extrabold mb-3 font-title md:text-2xl;
+      }
+
+      small {
+        @apply text-sm text-brown-400;
+      }
+    }
+
+    .wp-block-buttons {
+      @apply mt-5 md:mt-10;
+    }
+
+    a.wp-block-button {
+      &__link,
+      &__link:visited {
+        @apply btn btn-secondary;
+
+        &:hover {
+          @apply bg-primary-base text-primaryBg;
+        }
+      }
+    }
+  }
+}

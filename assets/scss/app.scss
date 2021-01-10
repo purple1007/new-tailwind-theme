@@ -1,7 +1,15 @@
 @import "lib/mixins";
+
+// base
 @import "~tailwindcss/base";
-@import "partials/base";
-@import "partials/animations";
+@import "partials/index";
+
+// components
 @import "~tailwindcss/components";
-@import "partials/components";
+@import "components/index";
+
+// pages
+@import "pages/index";
+
+// utilities
 @import "~tailwindcss/utilities";

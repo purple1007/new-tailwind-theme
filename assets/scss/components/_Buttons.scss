@@ -1,0 +1,10 @@
+$module: 'a.wp-block-button';
+#{$module} {
+  &__link, 
+  &__link:visited {
+    @apply btn btn-primary;
+  }
+  &__link:hover {
+    @apply text-primaryBg no-underline not-italic;
+  }
+}

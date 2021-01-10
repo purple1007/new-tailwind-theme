@@ -1,14 +1,26 @@
 // Add any custom base CSS can go here
 
-
-// Foundation
-// =≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠
 html {
-  @apply antialiased;
-  font-size: 15px;
+  @apply antialiased text-base;
   text-rendering: optimizeLegibility;
-
+  scroll-behavior: smooth;
   @screen md {
-    font-size: 18px;
+    @apply text-lg;
   }
+}
+
+body {
+  @apply bg-primaryBg text-brown-800 font-body;
+}
+
+::selection { @apply bg-primary-base text-primaryBg; }
+
+a {
+  @apply text-primary-base transition duration-100;
+
+  &:hover { @apply  underline italic; }
+}
+
+.wp-block-separator {
+  @apply border-0 border-b border-brown-800;
 }
