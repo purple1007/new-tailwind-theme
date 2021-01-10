@@ -1,10 +1,7 @@
 <?php
 
-
 use MyBlogTheme\AutoLoader;
 use MyBlogTheme\View;
-
-
 /*
  * Set up our auto loading class and mapping our namespace to the app directory.
  *
@@ -26,21 +23,26 @@ require get_stylesheet_directory() . '/includes/scripts-and-styles.php';
 ?>
 
 <?php
-  add_theme_support('post-thumbnails')
-?>
 
-<!-- Filter the except length. -->
-
-<?php
   function custom_excerpt_length( $length ) {
     return 150;
   }
   add_filter( 'excerpt_length', 'custom_excerpt_length', 999 );
 
   function wpdocs_excerpt_more( $more ) {
-    return '<a href="'.get_the_permalink().'" class="ml-2" rel="nofollow">Read more...</a>
-      ';
+    return '<a href="'.get_the_permalink().'" class="ml-2" rel="nofollow">Read more...</a>';
   } 
   add_filter( 'excerpt_more', 'wpdocs_excerpt_more' );
+
+  add_theme_support('post-thumbnails');
+
+  function myMenus() {
+    $locations = array (
+      'primary' => 'Navigation Bar',
+      'footer' => 'Footer Menu Items'
+    );
+    register_nav_menus($locations);
+  }
+  add_action( 'init','myMenus' );
 
 ?>
