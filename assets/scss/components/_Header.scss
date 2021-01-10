@@ -1,14 +1,14 @@
-.Header {
+.header {
   @apply bg-primaryBg w-full fixed top-0 px-8;
 
-  .SiteName {
-    @apply text-primary-base font-bold text-lg;
-  }
-
-  .Navigation {
+  &__navigation {
     @apply flex flex-wrap justify-between items-center py-4 border-b border-gray-800;
 
-    &__Links {
+    &__site-name {
+      @apply text-primary-base font-bold text-lg;
+    }
+
+    &__links {
       li { @apply inline-block ml-2; }
       a { @apply  transition duration-150 hover:text-primary-base; }
     }

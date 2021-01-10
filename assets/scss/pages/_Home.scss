@@ -1,6 +1,4 @@
-$module: '.CustomHome';
-
-#{$module} {
+.custom_home {
   @apply pt-5 md:pt-20;
 
   h1 {
@@ -28,19 +26,19 @@ $module: '.CustomHome';
       small {
         @apply text-sm text-brown-400;
       }
-    }
 
-    .wp-block-buttons {
-      @apply mt-5 md:mt-10;
-    }
+      .wp-block-buttons {
+        @apply mt-5 md:mt-10;
+      }
 
-    a.wp-block-button {
-      &__link,
-      &__link:visited {
-        @apply btn btn-secondary;
+      a.wp-block-button {
+        &__link,
+        &__link:visited {
+          @apply btn btn-secondary;
 
-        &:hover {
-          @apply bg-primary-base text-primaryBg;
+          &:hover {
+            @apply bg-primary-base text-primaryBg;
+          }
         }
       }
     }

@@ -1,6 +1,6 @@
 <?php get_header(); ?>
 
-  <main class="SiteMain">
+  <main class="custom_layout">
   <?php 
     // Check if there are any posts to display
     if ( have_posts() ) : ?>
