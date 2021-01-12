@@ -10,13 +10,17 @@
           wp_nav_menu(
             array(
               'theme_location'  => 'primary',
-              'menu_class'      => 'header__navigation__links',
-              'container_class' => 'header__navigation__Primary',
-              'items_wrap'      => '<ul id="primary-menu-list" class="%2$s">%3$s</ul>',
+              'container_class' => 'header__navigation__container',
+              'items_wrap'      => '<ul class="header__navigation__links">%3$s</ul>',
               'fallback_cb'     => false,
             )
           );
         ?>
       <?php endif; ?>
+      <a class="header__navigation__close" id="closeBtn">
+        <span class="line"></span>
+        <span class="line"></span>
+        <span class="line"></span>
+      </a>
     </nav><!-- #site-navigation -->
   </header>

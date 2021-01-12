@@ -1,16 +1,133 @@
 .header {
-  @apply bg-primaryBg w-full fixed top-0 px-8;
+  @apply bg-primaryBg w-full fixed left-0 top-0 px-8 md:h-auto;
+
+  &__navigation.active {
+    @apply w-full h-screen items-start justify-start flex-col;
+
+    .header__navigation__close {
+      @apply inline-block absolute right-8;
+    }
+
+    .header__navigation__site-name {
+      margin-top: 4px;
+    }
+
+    .header__navigation__links {
+      @apply block mt-5;
+
+      .custom_sub_menu ul.sub-menu {
+        @apply block;
+      }
+    }
+  }
 
   &__navigation {
-    @apply flex flex-wrap justify-between items-center py-4 border-b border-gray-800;
+    @apply flex justify-between items-center w-auto h-auto py-5;
+
+    @screen md {
+      @apply flex-wrap border-b border-gray-800 py-0;
+    }
 
     &__site-name {
-      @apply text-primary-base font-bold text-lg;
+      @apply text-primary-base font-bold font-title text-xl my-0;
+    }
+
+    &__close {
+      @apply inline-block relative md:hidden;
+
+      .line {
+        @apply w-8 my-2 border-b block border-brown-800 transform transition transition-transform duration-75 origin-center;
+      }
+      &:hover {
+        @apply cursor-pointer;
+      }
+    }
+
+    &__close.active {
+      @apply h-8 w-8;
+
+      .line {
+        @apply absolute rotate-45 m-0 top-1/2;
+      }
+
+      .line:nth-child(2) {
+        @apply opacity-0;
+      }
+
+      .line:last-child {
+        @apply -rotate-45;
+      }
     }
 
     &__links {
-      li { @apply inline-block ml-2; }
-      a { @apply  transition duration-150 hover:text-primary-base; }
+      @apply hidden;
+
+      li {
+        @apply block ml-0;
+      }
+
+      @screen md {
+        @apply inline-block;
+
+        li {
+          @apply inline-block ml-2 py-4;
+        }
+      }
+
+      a {
+        @apply text-lg py-1 block transition duration-150 ;
+
+        &:hover {
+          @apply text-primary-base;
+        }
+
+        @screen md {
+          @apply text-sm py-0 inline;
+
+          &:hover {
+            @apply no-underline not-italic;
+          }
+        }
+      }
+    }
+
+    .custom_sub_menu {
+      @apply relative;
+
+      &:hover {
+        ul.sub-menu {
+          @apply block;
+        }
+      }
+
+      ul.sub-menu {
+        @apply hidden ml-2 my-3;
+      }
+
+      @screen md {
+        ul.sub-menu {
+          top: 67px;
+
+          @apply hidden absolute m-0 left-0 bg-primaryBg border border-brown-800;
+        }
+      }
+
+      li {
+        @apply block;
+
+        @screen md {
+          @apply inline-block ml-0 w-24 py-0;
+
+          a {
+            @apply px-3 py-2 block;
+
+            &:hover {
+              @apply bg-brown-100;
+            }
+          }
+        }
+      }
+
     }
   }
 }
