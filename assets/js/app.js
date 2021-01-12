@@ -9,11 +9,13 @@ const ExampleModule2 = require('./components/example-2');
 import ReplaceObfuscatedEmailAddresses from "./components/ReplaceObfuscatedEmailAddresses";
 import AnimateOnPageLinks from "./components/AnimateOnPageLinks";
 
+import Navbar from './components/navbar';
 
 // Initialise our components on jQuery.ready…
-// jQuery(function ($) {
-//     ExampleComponent1.init();
-//     ExampleModule2.init();
-//     ReplaceObfuscatedEmailAddresses.init();
-//     AnimateOnPageLinks.init();
-// });
+jQuery(function ($) {
+    Navbar.init();
+    // ExampleComponent1.init();
+    // ExampleModule2.init();
+    // ReplaceObfuscatedEmailAddresses.init();
+    // AnimateOnPageLinks.init();
+});
