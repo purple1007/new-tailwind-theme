@@ -4,11 +4,11 @@
   <?php if (have_posts()) : 
         while (have_posts()) : 
         the_post(); 
-        get_template_part( 'templates/partials/content/home' );
+        get_template_part( 'templates/partials/post-preview' );
     ?>
     <?php endwhile; endif; ?>
   </main>
 
 <?
 // get_sidebar();
-get_footer();
+get_footer();?>
