@@ -38,8 +38,9 @@ require get_stylesheet_directory() . '/includes/scripts-and-styles.php';
 
   function myMenus() {
     $locations = array (
-      'primary' => 'Navigation Bar',
-      'footer' => 'Footer Menu Items'
+      'navigation' => 'Navigation Bar',
+      'footer_menu' => 'Footer menu',
+      'footer_contact' => 'Footer Contact'
     );
     register_nav_menus($locations);
   }
