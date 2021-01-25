@@ -2,14 +2,14 @@
   @apply bg-brown-100 pt-10 pb-5 relative;
 
   @screen md {
-    @apply pt-16 pb-10;
+    @apply py-10;
   }
 
   &__container {
-    @apply max-w-4xl mx-auto px-8 grid gap-8;
+    @apply max-w-4xl mx-auto px-8 grid gap-14 mb-5;
 
     @screen md {
-      @apply grid-cols-2 gap-4;
+      @apply grid-cols-2 gap-4 mb-10;
     }
   }
 
