@@ -1,0 +1,61 @@
+.footer {
+  @apply bg-brown-100 pt-10 pb-5 relative;
+
+  @screen md {
+    @apply py-10;
+  }
+
+  &__container {
+    @apply max-w-4xl mx-auto px-8 grid gap-14 mb-5;
+
+    @screen md {
+      @apply grid-cols-2 gap-4 mb-10;
+    }
+  }
+
+  &__contact {
+    & h1 {
+      @apply text-4xl font-title font-extrabold text-primary-base mb-3 md:mb-5;
+    }
+
+    & a {
+      @apply text-brown-800 hover:text-primary-base;
+    }
+  }
+
+  &__menu {
+    & h2 {
+      @apply text-4xl font-title font-extrabold mb-3 md:mb-5;
+    }
+
+    &__container {
+      & a {
+        @apply text-brown-400  hover:text-primary-base;
+      }
+    }
+
+    &__links {
+      @apply flex flex-wrap;
+
+      & li {
+        @apply mr-3 mb-3;
+      }
+    }
+  }
+
+  &__copyright {
+    @apply max-w-4xl mx-auto px-8;
+
+    & small {
+      @apply text-brown-400;
+    }
+  }
+
+  .scroll_up {
+    @apply bg-brown-200 p-3 absolute bottom-5 md:bottom-8 right-8 hover:bg-brown-300;
+
+    svg {
+      @apply stroke-current stroke-1 w-6 h-6 text-brown-800;
+    }
+  }
+}

@@ -1,5 +1,5 @@
 .header {
-  @apply bg-primaryBg w-full fixed left-0 top-0 px-8 md:h-auto;
+  @apply bg-primaryBg w-full fixed left-0 z-10 top-0 px-8 md:h-auto;
 
   &__navigation.active {
     @apply w-full h-screen items-start justify-start flex-col;
@@ -127,7 +127,6 @@
           }
         }
       }
-
     }
   }
 }

@@ -5,13 +5,13 @@
           <?php bloginfo( 'name' ); ?>
         </a>
       </h1>
-      <?php if ( has_nav_menu( 'primary' ) ) : ?>
+      <?php if ( has_nav_menu( 'navigation' ) ) : ?>
         <?php
           wp_nav_menu(
             array(
-              'theme_location'  => 'primary',
+              'theme_location'  => 'navigation',
               'container_class' => 'header__navigation__container',
-              'items_wrap'      => '<ul class="header__navigation__links">%3$s</ul>',
+              'menu_class'     => 'header__navigation__links',
               'fallback_cb'     => false,
             )
           );
