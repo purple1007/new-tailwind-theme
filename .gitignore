@@ -8,6 +8,8 @@ local.json
 # build
 !build/
 build/local-manifest.json
+build/js/app.js
+build/css/app.css
 
 
 # Thumbnails
