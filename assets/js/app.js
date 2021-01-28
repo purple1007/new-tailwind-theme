@@ -10,10 +10,12 @@ import ReplaceObfuscatedEmailAddresses from "./components/ReplaceObfuscatedEmail
 import AnimateOnPageLinks from "./components/AnimateOnPageLinks";
 
 import Navbar from './components/navbar';
+import getPageTitle from './utils/getPageTitle'
 
 // Initialise our components on jQuery.ready…
 jQuery(function ($) {
     Navbar.init();
+    getPageTitle.init();
     // ExampleComponent1.init();
     // ExampleModule2.init();
     // ReplaceObfuscatedEmailAddresses.init();

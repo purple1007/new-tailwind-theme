@@ -25,12 +25,12 @@ require get_stylesheet_directory() . '/includes/scripts-and-styles.php';
 <?php
 
   function custom_excerpt_length( $length ) {
-    return 150;
+    return 100;
   }
   add_filter( 'excerpt_length', 'custom_excerpt_length', 999 );
 
   function wpdocs_excerpt_more( $more ) {
-    return '<a href="'.get_the_permalink().'" class="ml-2" rel="nofollow">Read more...</a>';
+    return '...';
   } 
   add_filter( 'excerpt_more', 'wpdocs_excerpt_more' );
 

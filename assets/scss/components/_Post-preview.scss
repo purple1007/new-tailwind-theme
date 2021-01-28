@@ -1,0 +1,42 @@
+.post_preview {
+  @apply py-4 border-b flex flex-col  border-brown-800;
+
+  @screen md {
+    @apply flex-row py-6;
+  }
+
+  &__thumbnail {
+    @apply inline-block w-full h-36 mb-3 overflow-hidden;
+
+    @screen md { @apply w-1/4 h-40 mb-0; }
+
+    img {
+      @apply h-full w-full object-cover object-center;
+    }
+
+    & + .post_preview__content {
+      @apply inline-block w-full;
+
+      @screen md {
+        @apply  w-3/4 pl-5 -mt-2;
+      }
+    }
+  }
+
+  &__time {
+    @apply text-brown-400;
+  }
+
+  &__title {
+    @apply font-bold text-3xl mb-4;
+
+    @screen md {
+      @apply mb-2
+    }
+
+  }
+
+  &__link {
+    @apply mt-3;
+  }
+}
