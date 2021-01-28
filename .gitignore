@@ -7,10 +7,8 @@ local.json
 
 # build
 !build/
-build/css/
-build/js/
 build/local-manifest.json
-!build/mix-mainifes.json
+
 
 # Thumbnails
 ._*
