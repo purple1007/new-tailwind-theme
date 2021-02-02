@@ -29,7 +29,12 @@
     </div>
     </section>
  
+   <!-- 分頁 -->
+   <?php get_template_part( 'templates/partials/posts-pagination' );?>
+   
   </main>
+
+
 
 <?
 // get_sidebar();

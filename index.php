@@ -1,5 +1,6 @@
 <?php get_header(); ?>
 
+  <!-- Blog page -->
   <main class="custom_layout index">
   <?php get_template_part( 'templates/partials/replace-page-title' ); ?>
   <?php if (have_posts()) : 
@@ -10,7 +11,8 @@
   <?php endwhile; endif; ?>
   
   <!-- 分頁 -->
-  <?php the_posts_pagination() ?>
+  <?php get_template_part( 'templates/partials/posts-pagination' );?>
+
   </main>
 
 <?
