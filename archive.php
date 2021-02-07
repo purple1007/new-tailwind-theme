@@ -1,14 +1,12 @@
 <?php get_header(); ?>
 
-  <main class="custom_layout">
+  <main class="custom_layout archive">
   <?php 
     // Check if there are any posts to display
     if ( have_posts() ) : ?>
     
     <header class="archive-header">
-      <h1 class="archive-title">Category: <?php single_cat_title( '', false ); ?></h1>
-    
-    
+    <?php get_template_part( 'templates/partials/replace-page-title' ); ?>
       <?php
         // Display optional category description
         if ( category_description() ) : ?>
@@ -25,12 +23,18 @@
     ?>
     
     <?php endwhile; else: ?>
-      <p>Sorry, no posts matched your criteria.</p>
+      <?php get_template_part( 'templates/partials/replace-page-title' ); ?>
+      <p>目前尚無文章</p>
     <?php endif; ?>
     </div>
     </section>
  
+   <!-- 分頁 -->
+   <?php get_template_part( 'templates/partials/posts-pagination' );?>
+   
   </main>
+
+
 
 <?
 // get_sidebar();

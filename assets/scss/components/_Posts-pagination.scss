@@ -1,0 +1,21 @@
+.custom_posts_pagination {
+  .screen-reader-text {
+    @apply hidden;
+  }
+
+  .nav-links { @apply mx-auto my-5; }
+
+  .page-numbers {
+    @apply flex flex-wrap justify-center;
+    li { @apply mx-1 text-sm; }
+    span { @apply p-1; }
+
+    a {
+      @apply text-brown-400 py-1 px-2;
+
+      &:hover {
+        @apply no-underline not-italic text-primary-base bg-brown-100 ;
+      }
+    }
+  }
+}
