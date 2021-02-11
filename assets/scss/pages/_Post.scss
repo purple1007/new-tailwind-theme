@@ -36,6 +36,18 @@
       }
 
       & hr { @apply border-brown-300 my-4; }
+
+      & ol, ul { @apply my-3 ml-5; }
+      & ol { @apply list-decimal; }
+      & ul { @apply list-disc; }
+      & ul li ul { 
+        list-style-type: revert;
+        @apply my-1;
+      }
+      & ul li ul li ul { 
+        list-style-type: square;
+        @apply my-1;
+      }
     }
 
     &___footer {
