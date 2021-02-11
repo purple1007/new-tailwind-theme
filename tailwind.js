@@ -42,10 +42,8 @@ module.exports = {
         },
         fontFamily: {
           sans: ['poppins','system-ui', 'apple-system', 'Roboto', '"Noto Sans TC"', 'sans-serif'],
-          serif: ['"Playfair Display"', 'Lora', '"Noto Serif TC"', 'serif'],
-          mono: ['ui-monospace', 'SFMono-Regular', 'Menlo', 'Monaco', 'Consolas', '"Courier New"', 'monospace'],
-          body: ['Lora', '"Noto Serif TC"', '"serif"'],
-          title: ['"Playfair Display"', '"Noto Serif TC"', 'serif']
+          serif: ['"Playfair Display"', '"Noto Serif TC"', 'serif'],
+          mono: ['ui-monospace', 'SFMono-Regular', 'Menlo', 'Monaco', 'Consolas', '"Courier New"', 'monospace']
         },
         lineHeight: {
           tighter: '1.125',
