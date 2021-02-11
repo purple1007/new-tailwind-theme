@@ -2,11 +2,11 @@
   @apply pt-5 md:pt-20;
 
   h1 {
-    @apply font-title text-4xl md:text-5xl md:leading-normal text-primary-base font-extrabold mb-10;
+    @apply font-serif text-4xl md:text-5xl md:leading-normal text-primary-base font-extrabold mb-10;
   }
 
   h2 {
-    @apply text-3xl md:text-4xl text-primary-base font-extrabold mt-8 mb-4 md:my-10 font-title;
+    @apply text-3xl md:text-4xl text-primary-base font-extrabold mt-8 mb-4 md:my-10 font-serif;
   }
 
   .home-description {
@@ -20,7 +20,7 @@
       @apply m-0 mb-2 md:mb-8;
 
       h3 {
-        @apply text-xl font-extrabold mb-3 font-title md:text-2xl;
+        @apply text-xl font-extrabold mb-3 font-serif md:text-2xl;
       }
 
       small {

@@ -19,7 +19,7 @@
     <title><?= wp_get_document_title() ?></title>
     <script>document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/, 'js');</script>
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Lora&family=Noto+Serif+TC:wght@500;700&family=Playfair+Display:wght@600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Poppins&display=swap" rel="stylesheet">
 	<?php wp_head(); ?>
 </head>
 

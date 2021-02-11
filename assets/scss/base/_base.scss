@@ -10,7 +10,7 @@ html {
 }
 
 body {
-  @apply bg-primaryBg text-brown-800 font-body;
+  @apply bg-primaryBg text-brown-800 font-sans;
 }
 
 ::selection { @apply bg-primary-base text-primaryBg; }
@@ -18,7 +18,7 @@ body {
 a {
   @apply text-primary-base transition duration-100;
 
-  &:hover { @apply  underline italic; }
+  &:hover { @apply  underline transition duration-100; }
 }
 
 .wp-block-separator {
