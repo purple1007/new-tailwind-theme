@@ -28,7 +28,7 @@
   }
 
   &__title {
-    @apply font-bold text-3xl mb-4;
+    @apply font-bold font-title text-3xl mb-4;
 
     @screen md {
       @apply mb-2
@@ -37,6 +37,6 @@
   }
 
   &__link {
-    @apply mt-3;
+    @apply mt-3 text-sm font-title;
   }
 }

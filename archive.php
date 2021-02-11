@@ -6,7 +6,10 @@
     if ( have_posts() ) : ?>
     
     <header class="archive-header">
-    <?php get_template_part( 'templates/partials/replace-page-title' ); ?>
+      <h1 class="page-title">
+        <?php $category = get_the_category(); 
+              echo $category[0]->cat_name; ?>
+      </h1>
       <?php
         // Display optional category description
         if ( category_description() ) : ?>
@@ -17,17 +20,17 @@
     </header>
     
     <?php
-    // The Loop
-    while ( have_posts() ) : the_post(); 
-      get_template_part( 'templates/partials/post-preview' );
+      // The Loop
+      while ( have_posts() ) : the_post(); 
+        get_template_part( 'templates/partials/post-preview' );
     ?>
-    
     <?php endwhile; else: ?>
-      <?php get_template_part( 'templates/partials/replace-page-title' ); ?>
+      <h1 class="page-title">
+        <?php $category = get_the_category(); 
+              echo $category[0]->cat_name; ?>
+      </h1>
       <p>目前尚無文章</p>
     <?php endif; ?>
-    </div>
-    </section>
  
    <!-- 分頁 -->
    <?php get_template_part( 'templates/partials/posts-pagination' );?>

@@ -6,8 +6,8 @@
   <?php endif; ?>
   <div class="post_preview__content">
     <small class="post_preview__time">
-      <?php the_date() ?>
-      
+      <?php the_date() ?>・<?php $category = get_the_category(); 
+        echo $category[0]->cat_name; ?>
     </small>
     <a 
       href="<?php the_permalink() ?>"
