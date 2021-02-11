@@ -1,8 +1,8 @@
 .post_preview {
-  @apply py-4 border-b flex flex-col  border-brown-800;
+  @apply py-5 border-b flex flex-col  border-brown-800;
 
   @screen md {
-    @apply flex-row py-6;
+    @apply flex-row py-8;
   }
 
   &__thumbnail {
@@ -11,7 +11,12 @@
     @screen md { @apply w-1/4 h-40 mb-0; }
 
     img {
-      @apply h-full w-full object-cover object-center;
+      @apply h-full w-full object-cover object-center transition-all duration-100;
+    }
+    & a:hover {
+      img {
+        @apply transform scale-105;
+      }
     }
 
     & + .post_preview__content {
@@ -21,22 +26,25 @@
         @apply  w-3/4 pl-5 -mt-2;
       }
     }
+    
   }
 
-  &__time {
-    @apply text-brown-400;
+  &__detail {
+    @apply text-brown-400 text-sm;
   }
 
   &__title {
-    @apply font-bold font-title text-3xl mb-4;
+    @apply font-bold text-3xl mb-4;
 
     @screen md {
-      @apply mb-2
+      @apply mb-5;
     }
-
+    & a:hover {
+      @apply text-primary-400 no-underline;
+    }
   }
 
   &__link {
-    @apply mt-3 text-sm font-title;
+    @apply mt-5 text-sm;
   }
 }
