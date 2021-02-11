@@ -8,6 +8,7 @@
     ?>
       
     <?php endwhile; endif; ?>
+    <?php get_template_part( 'templates/partials/recent-posts' );?>
   </main>
 
 <?
