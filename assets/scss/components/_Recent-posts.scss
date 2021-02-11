@@ -1,35 +1,37 @@
 .recent_posts {
   @apply border-t border-black pt-8 mt-5;
+
   h2 {
     @apply text-4xl text-primary-base font-bold font-serif;
   }
+
   a:hover {
     @apply no-underline;
-    h3 {
-      @apply text-primary-400;
-    }
-    img {
-      @apply transform scale-105;
-    }
+
+    h3 { @apply text-primary-400; }
+
+    img { @apply transform scale-105; }
   }
 
-  small {
-    @apply text-brown-400 text-xs;
-  }
+  small { @apply text-brown-400 text-xs; }
+
   &__container {
     @apply grid grid-cols-1 gap-8 md:grid-cols-2 md:gap-6 mt-8;
   }
+
   &__title {
     @apply text-2xl font-bold font-serif;
   }
+
   &__thumbnail {
-    @apply overflow-hidden mt-2 h-40 md:h-44 md:mt-5 flex justify-center items-center;
+    @apply overflow-hidden mt-2 h-40 flex justify-center items-center;
+
+    @screen md { @apply h-44 mt-5; }
 
     img {
       @apply object-center object-cover transition-all duration-75;
     }
   }
-  &__goBlog {
-    @apply mt-8 text-center;
-  }
+
+  &__goBlog { @apply mt-8 text-center; }
 }

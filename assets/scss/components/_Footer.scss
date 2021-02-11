@@ -1,8 +1,8 @@
 .footer {
-  @apply bg-brown-100 pt-10 pb-5 relative;
+  @apply bg-brown-100 pt-10 pb-5 md:py-10 relative;
 
-  @screen md {
-    @apply py-10;
+  a:hover {
+    @apply text-primary-base no-underline; 
   }
 
   &__container {
@@ -14,41 +14,33 @@
   }
 
   &__contact {
-    & h1 {
+    h1 {
       @apply text-4xl font-serif font-extrabold text-primary-base mb-3 md:mb-5;
     }
 
-    & a {
-      @apply text-brown-800 hover:text-primary-base;
-    }
+    a { @apply text-brown-800; }
   }
 
   &__menu {
-    & h2 {
+    h2 {
       @apply text-4xl font-serif font-extrabold mb-3 md:mb-5;
     }
 
     &__container {
-      & a {
-        @apply text-brown-400  hover:text-primary-base;
-      }
+      a { @apply text-brown-400; }
     }
 
     &__links {
       @apply flex flex-wrap;
 
-      & li {
-        @apply mr-3 mb-3;
-      }
+      li { @apply mr-3 mb-3; }
     }
   }
 
   &__copyright {
     @apply max-w-4xl mx-auto px-8;
 
-    & small {
-      @apply text-brown-400;
-    }
+    & small { @apply text-brown-400; }
   }
 
   .scroll_up {

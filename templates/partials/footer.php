@@ -1,4 +1,4 @@
-  <footer class="footer">
+  <footer class="footer" id="footer">
     <div class="footer__container">
       <div class="footer__contact">
         <h1>Let's talk!</h1>

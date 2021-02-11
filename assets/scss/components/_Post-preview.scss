@@ -1,9 +1,7 @@
 .post_preview {
   @apply py-5 border-b flex flex-col  border-brown-800;
 
-  @screen md {
-    @apply flex-row py-8;
-  }
+  @screen md { @apply flex-row py-9; }
 
   &__thumbnail {
     @apply inline-block w-full h-36 mb-3 overflow-hidden;
@@ -13,6 +11,7 @@
     img {
       @apply h-full w-full object-cover object-center transition-all duration-100;
     }
+
     & a:hover {
       img {
         @apply transform scale-105;
@@ -22,11 +21,9 @@
     & + .post_preview__content {
       @apply inline-block w-full;
 
-      @screen md {
-        @apply  w-3/4 pl-5 -mt-2;
-      }
+      @screen md { @apply w-3/4 pl-5 -mt-2; }
     }
-    
+
   }
 
   &__detail {
@@ -34,15 +31,17 @@
   }
 
   &__title {
-    @apply font-bold text-3xl mb-4;
+    @apply font-bold text-3xl font-serif;
 
-    @screen md {
-      @apply mb-5;
-    }
     & a:hover {
       @apply text-primary-400 no-underline;
     }
   }
+
+  &__excerpt {
+    @apply mt-3;
+  }
+
 
   &__link {
     @apply mt-5 text-sm;
