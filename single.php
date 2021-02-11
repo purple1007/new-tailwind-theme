@@ -1,6 +1,6 @@
 <?php get_header(); ?>
 
-  <main class="custom_layout custom_signpost">
+  <main class="custom_layout custom_single_post">
     <?php if (have_posts()) : 
         while (have_posts()) : 
         the_post(); 
