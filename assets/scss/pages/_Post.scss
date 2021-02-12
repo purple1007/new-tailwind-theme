@@ -27,7 +27,7 @@
       & h4 { @apply text-xl mt-2; }
       & h5,h6 { @apply font-sans; }
 
-      & img, iframe { @apply w-full h-auto my-2; }
+      & img, iframe { @apply w-full my-2; }
 
       & p > code { @apply bg-brown-100 py-0.5 px-1.5 text-xs text-primary-base; }
 
