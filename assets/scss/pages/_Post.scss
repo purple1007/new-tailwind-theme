@@ -20,10 +20,10 @@
       & h1 { @apply text-5xl mt-4; }
 
       & h2 { 
-        @apply text-3xl border-b border-brown-200 pb-1 mt-4; 
+        @apply text-3xl border-b border-brown-200 pb-1 mt-5 mb-3; 
       }
 
-      & h3 { @apply text-2xl mt-4; }
+      & h3 { @apply text-2xl mt-5 mb-2; }
       & h4 { @apply text-xl mt-2; }
       & h5,h6 { @apply font-sans; }
 
@@ -32,7 +32,7 @@
       & p > code { @apply bg-brown-100 py-0.5 px-1.5 text-xs text-primary-base; }
 
       & blockquote {
-        @apply border-l-4 border-primary-base bg-brown-100 p-2 my-2 text-primary-400;
+        @apply border-l-4 border-primary-base bg-brown-100 p-3 my-2 text-primary-400;
       }
 
       & hr { @apply border-brown-300 my-4; }
