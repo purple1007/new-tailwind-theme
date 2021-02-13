@@ -3,7 +3,7 @@
   <!-- Blog page -->
   <main class="custom_layout index">
     <h1 class="page-title">
-        <?php wp_title(''); ?>
+        Blog
     </h1>
     <?php if (have_posts()) : 
           while (have_posts()) : 
