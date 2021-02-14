@@ -24,3 +24,7 @@ a {
 .wp-block-separator {
   @apply border-0 border-b border-brown-800;
 }
+
+p {
+  @apply text-base;
+}
