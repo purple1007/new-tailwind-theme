@@ -19,6 +19,9 @@
       & > h3 {
         @apply mb-2 text-brown-400 font-serif font-extrabold;
       }
+      &:last-child {
+        @apply border-0;
+      }
     }
 
     &__columns {
