@@ -75,7 +75,7 @@
       }
 
       a {
-        @apply text-lg py-1 block transition duration-150 ;
+        @apply text-lg font-bold py-1 block transition duration-150 ;
 
         &:hover {
           @apply text-primary-base;
@@ -106,7 +106,7 @@
 
       @screen md {
         ul.sub-menu {
-          top: 67px;
+          top: 63px;
 
           @apply hidden absolute m-0 left-0 bg-primaryBg border border-brown-800;
         }
