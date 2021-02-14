@@ -58,12 +58,11 @@
       & div:last-child {
         @apply border-t md:border-t-0 md:border-l border-black;
       }
-
       & div {
-        @apply pt-6 pb-5 px-2 relative text-center;
-
+        @apply py-5 px-3 flex-wrap flex items-center;
+        & h3 { @apply font-serif font-bold; }
         & span {
-          @apply absolute top-0 left-0 p-2 bg-brown-100 text-xs text-primary-400;
+          @apply text-xs text-brown-400 pr-2 border-r border-brown-400 mr-2;
         }
       }
     }

@@ -20,13 +20,13 @@
 
   <section class="post___footer">
     <div>
-      <span>上一篇文章</span>
+      <span>上一篇</span>
       <h3>
         <?php previous_post_link('%link', '%title'); ?>
       </h3>
     </div>
     <div>
-      <span>下一篇文章</span>
+      <span>下一篇</span>
       <h3>
         <?php next_post_link('%link', '%title'); ?>
       </h3>
