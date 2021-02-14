@@ -1,9 +1,10 @@
-<section class="recent_posts">
-  <h2>最新文章</h2>
+<section class="recent_posts home__section">
+  <h3>The recently articles ＿＿</h3>
+  <h2>我最近的文章＿＿</h2>
   <div class="recent_posts__container">
     <?php
     $recent_posts = wp_get_recent_posts(array(
-        'numberposts' => 2, 
+        'numberposts' => 4, 
         'post_status' => 'publish'
     ));
     foreach( $recent_posts as $post_item ) : ?>
@@ -27,7 +28,7 @@
   </div>
   <div>
   <div class="recent_posts__goBlog">
-    <a class="wp-block-button__link" href="/blog" >閱讀更多文章</a>
+    <a class="button__link" href="/blog" >閱讀更多文章</a>
   </div>
   </div>
 </section>

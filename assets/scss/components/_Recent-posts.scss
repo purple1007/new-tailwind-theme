@@ -1,9 +1,5 @@
 .recent_posts {
-  @apply border-t border-black pt-8 mt-5;
-
-  h2 {
-    @apply text-4xl text-primary-base font-bold font-serif;
-  }
+  @apply pt-8 mt-5;
 
   a:hover {
     @apply no-underline;
@@ -16,7 +12,7 @@
   small { @apply text-brown-400 text-xs; }
 
   &__container {
-    @apply grid grid-cols-1 gap-8 md:grid-cols-2 md:gap-6 mt-8;
+    @apply grid grid-cols-1 gap-8 md:grid-cols-2 md:gap-8 mt-8;
   }
 
   &__title {
@@ -26,12 +22,15 @@
   &__thumbnail {
     @apply overflow-hidden mt-2 h-40 flex justify-center items-center;
 
-    @screen md { @apply h-44 mt-5; }
+    @screen md { @apply h-44 mt-3; }
 
     img {
       @apply object-center object-cover transition-all duration-75;
     }
   }
 
-  &__goBlog { @apply mt-8 text-center; }
+  &__goBlog { 
+    @apply mt-10 text-center;
+    @screen md { @apply mt-12; }
+  }
 }
