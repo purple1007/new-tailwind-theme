@@ -33,7 +33,7 @@
     </div>
   </section>
   <div class="post__back_btn">
-    <a class="wp-block-button__link" href="/blog" >回到部落格</a>
+    <a class="button__link" href="/blog" >回到部落格</a>
   </div>
 
 </section>
