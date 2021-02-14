@@ -15,7 +15,7 @@
           <?php echo $post_item['post_title'] ?>
         </h3>
       </a>
-      <small><?php the_date() ?>・<?php $category = get_the_category($post_item['ID']); 
+      <small><?php echo get_the_date('') ?>・<?php $category = get_the_category($post_item['ID']); 
         echo $category[0]->cat_name; ?>
       </small>
         <a href="<?php echo get_permalink($post_item['ID']) ?>">
