@@ -1,6 +1,7 @@
 <section class="recent_posts home__section">
   <h3>The recently articles ＿＿</h3>
-  <h2>我最近的文章＿＿</h2>
+  <h2><a href="/blog">我最近的文章＿＿</a></h2>
+  
   <div class="recent_posts__container">
     <?php
     $recent_posts = wp_get_recent_posts(array(

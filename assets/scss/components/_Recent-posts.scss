@@ -2,10 +2,6 @@
   @apply pt-8 mt-5;
 
   a:hover {
-    @apply no-underline;
-
-    h3 { @apply text-primary-400; }
-
     img { @apply transform scale-105; }
   }
 
