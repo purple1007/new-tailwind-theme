@@ -1,6 +1,6 @@
 <section class="home__section">
   <h3>What I’m working on ＿＿</h3>
-  <h2>我目前正在進行＿＿</h2>
+  <h2>目前正在進行＿＿</h2>
 
   <div class="home__columns">
     <div class="home__column">

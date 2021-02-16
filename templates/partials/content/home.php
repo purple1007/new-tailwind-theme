@@ -19,5 +19,5 @@
 
   <?php get_template_part( 'templates/partials/content/home/working-on' ); ?>
   
-  <?php get_template_part( 'templates/partials/recent-posts' );?>
+  <?php get_template_part( 'templates/partials/content/home/recent-posts' );?>
 </article>
