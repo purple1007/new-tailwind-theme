@@ -36,7 +36,7 @@
 
       & > p { @apply mb-2; }
 
-      & p > code { @apply bg-brown-100 py-0.5 px-1.5 text-xs text-primary-base; }
+      & p > code { @apply bg-brown-200 bg-opacity-50 py-0.5 px-1.5 text-sm text-primary-base font-sans rounded-sm; }
 
       & blockquote {
         @apply border-l-4 border-primary-base bg-brown-100 py-3 px-4 my-3 text-primary-400;
