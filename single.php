@@ -1,7 +1,7 @@
 <?php get_header(); ?>
 
   <main class="custom_layout custom_single_post">
-    <div class="custom_layout__container">
+    
       <?php if (have_posts()) : 
           while (have_posts()) : 
           the_post(); 
@@ -9,8 +9,9 @@
       ?>
         
       <?php endwhile; endif; ?>
-
-    </div>
+      
+    <? get_sidebar('sidebar', $args); ?>
+    <?php get_template_part ("templates/partials/single-post/post-footer")?>
   </main>
-
+  
 <? get_footer();?>
