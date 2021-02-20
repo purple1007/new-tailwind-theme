@@ -15,7 +15,6 @@ $module: '.custom_widget';
   a {
     @apply px-2 py-1 mb-2 mr-2 bg-brown-100 inline-block;
     font-size: .7rem !important;
-     
     &:hover {
       @apply bg-primary-100;
     }
