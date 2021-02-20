@@ -1,3 +1,5 @@
 .custom_layout {
-  @apply max-w-4xl mx-auto px-8 mt-24 mb-20;
+  &__container {
+    @apply max-w-4xl mx-auto px-8 mt-24 mb-20;
+  }
 }

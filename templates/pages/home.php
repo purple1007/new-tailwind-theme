@@ -17,7 +17,7 @@
     </p>
   </section>
 
-  <?php get_template_part( 'templates/partials/content/home/working-on' ); ?>
+  <?php get_template_part( 'templates/partials/home/working-on' ); ?>
   
-  <?php get_template_part( 'templates/partials/content/home/recent-posts' );?>
+  <?php get_template_part( 'templates/partials/home/recent-posts' );?>
 </article>
