@@ -6,12 +6,16 @@ $module: '.custom_widget';
   &__title {
     @apply font-semibold border-brown-200 border-b mb-2 w-full;
   }
+  li, a, p {
+    @apply text-xs;
+  }
 }
 
 #{$module}.widget_tag_cloud {
   a {
-    @apply px-2 py-1 mb-2 mr-2 bg-brown-100;
-
+    @apply px-2 py-1 mb-2 mr-2 bg-brown-100 inline-block;
+    font-size: .7rem !important;
+     
     &:hover {
       @apply bg-primary-100;
     }
