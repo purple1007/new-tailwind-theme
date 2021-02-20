@@ -12,7 +12,7 @@ get_header();
 /* Start the Loop */
 while ( have_posts() ) :
 	the_post();
-	get_template_part( 'templates/partials/content/page' );
+	get_template_part( 'templates/pages/single-page' );
 
 	// If comments are open or there is at least one comment, load up the comment template.
 	if ( comments_open() || get_comments_number() ) {
