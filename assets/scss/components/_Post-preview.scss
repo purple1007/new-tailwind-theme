@@ -6,7 +6,7 @@
   &__thumbnail {
     @apply inline-block w-full h-36 mb-3 overflow-hidden;
 
-    @screen md { @apply w-1/4 h-40 mb-0; }
+    @screen md { @apply w-1/4 h-32 mb-0; }
 
     img {
       @apply h-full w-full object-cover object-center transition-all duration-100;
@@ -21,7 +21,7 @@
     & + .post_preview__content {
       @apply inline-block w-full;
 
-      @screen md { @apply w-3/4 pl-5 -mt-2; }
+      @screen md { @apply w-3/4 pl-3 -mt-2; }
     }
 
   }
