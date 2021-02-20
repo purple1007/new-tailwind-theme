@@ -7,7 +7,7 @@ $module: '.custom_widget';
     @apply font-semibold border-brown-200 border-b mb-2 w-full;
   }
   li, a, p {
-    @apply text-xs;
+    @apply text-sm;
   }
 }
 
