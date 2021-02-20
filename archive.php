@@ -2,20 +2,24 @@
 
   <main class="custom_layout archive">
   <?php 
-    // Check if there are any posts to display
     if ( have_posts() ) : ?>
     
     <header class="archive-header">
-      <h1 class="page-title">
-        <?php $category = get_the_category(); 
-              echo $category[0]->cat_name; ?>
-      </h1>
+      <!-- 分類 -->
       <?php
-        // Display optional category description
-        if ( category_description() ) : ?>
-        <div class="archive-meta">
-          <?php echo category_description(); ?>
-        </div>
+        if ( is_category() ) : ?>
+        <h1 class="page-title">
+          <?php $category = get_the_category(); 
+            echo $category[0]->cat_name; ?>
+        </h1>
+      <?php endif; ?>
+
+      <!-- 標籤 -->
+      <?php
+        if ( is_tag() ) : ?>
+        <h1 class="page-title">
+          Tag: <?php wp_title('');?>
+        </h1>
       <?php endif; ?>
     </header>
     
@@ -24,9 +28,10 @@
       while ( have_posts() ) : the_post(); 
         get_template_part( 'templates/partials/post-preview' );
     ?>
+
     <?php endwhile; else: ?>
       <h1 class="page-title">
-        <?php $category = get_the_category(); 
+          <?php $category = get_the_category(); 
               echo $category[0]->cat_name; ?>
       </h1>
       <p>目前尚無文章</p>
@@ -36,9 +41,6 @@
    <?php get_template_part( 'templates/partials/posts-pagination' );?>
    
   </main>
-
-
-
 <?
 // get_sidebar();
 get_footer();?>
