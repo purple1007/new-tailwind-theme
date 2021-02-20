@@ -18,7 +18,7 @@
         echo '搜尋結果：'.wp_specialchars($s);
 
       } elseif (!(is_404()) && (is_single()) || (is_page())) {
-        echo get_the_title(); 
+        echo the_title(); 
 
       } elseif (is_404()) {
         echo 'Not Found';
