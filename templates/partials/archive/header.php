@@ -2,7 +2,8 @@
   <h1 class="page-title">
     <?php
       if (is_category()) {
-        echo wp_title('');
+        $category = get_the_category(); 
+        echo $category[0]->cat_name;;
 
       } elseif (function_exists('is_tag') && is_tag()) {
         single_tag_title('Tag : '); 
@@ -17,7 +18,7 @@
         echo '搜尋結果：'.wp_specialchars($s);
 
       } elseif (!(is_404()) && (is_single()) || (is_page())) {
-        wp_title(''); 
+        echo get_the_title(); 
 
       } elseif (is_404()) {
         echo 'Not Found';
