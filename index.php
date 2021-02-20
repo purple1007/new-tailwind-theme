@@ -2,10 +2,10 @@
 
 <!-- Blog page -->
 <main class="custom_layout index">
-  <div class="custom_layout__container">
-    <h1 class="page-title">
-        Blog
+  <h1 class="page-title">
+      <?php wp_title('');?>
     </h1>
+  <div class="custom_container">
     <?php if (have_posts()) : 
           while (have_posts()) : 
           the_post(); 
@@ -16,6 +16,7 @@
     <!-- 分頁 -->
     <?php get_template_part( 'templates/partials/posts-pagination' );?>
   </div>
+  <? get_sidebar('sidebar', $args); ?>
 </main>
 
 <? get_footer();?>

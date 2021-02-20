@@ -1,9 +1,9 @@
 <?php get_header(); ?>
 
 <main class="custom_layout archive">
-  <div class="custom_layout__container">
+  <?php get_template_part( 'templates/partials/archive/header' );?>
   <?php get_template_part( 'templates/pages/archive' );?>
-  </div>
+  <? get_sidebar('sidebar', $args); ?>
 </main>
 
 <?

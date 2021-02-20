@@ -24,6 +24,7 @@ require get_stylesheet_directory() . '/includes/scripts-and-styles.php';
 
 <?php
 
+  // 文章預覽文字
   function custom_excerpt_length( $length ) {
     return 100;
   }
@@ -34,8 +35,37 @@ require get_stylesheet_directory() . '/includes/scripts-and-styles.php';
   } 
   add_filter( 'excerpt_more', 'wpdocs_excerpt_more' );
 
+  // 文章精選圖片
   add_theme_support('post-thumbnails');
 
+  // 小工具
+  add_theme_support( 'widgets' );
+  function theme_slug_widgets_init() {
+    register_sidebar( array(
+        'name' => __( '側邊欄', 'theme-slug' ),
+        'id' => 'sidebar',
+        'title' => 'sidebar',
+        'description' => __( '預設側邊欄', 'theme-slug' ),
+        'before_widget' => '<div id="%1$s" class="custom_widget %2$s">',
+        'after_widget'  => '</div>',
+        'before_title'  => '<h3 class="custom_widget__title">',
+        'after_title'   => '</h3>',
+      ) );
+  }
+  add_action( 'widgets_init', 'theme_slug_widgets_init' );
+  
+  add_filter('get_the_archive_title', function ($title) {
+    if ( is_year() ) {
+      $title = get_the_date( _x( 'Y', '' ) );
+    } elseif ( is_month() ) {
+        $title = get_the_date( _x( 'm/Y', '' ) );
+    } elseif ( is_day() ) {
+        $title = get_the_date( _x( 'd/m/Y', '' ) );
+    }
+    return $title;
+  });
+
+  // navbar
   function myMenus() {
     $locations = array (
       'navigation' => 'Navigation Bar',
