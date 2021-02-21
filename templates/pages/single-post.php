@@ -15,4 +15,8 @@
     <div class="post__content">
       <?php the_content(); ?>
     </div>
+    <div class="post__tags">
+      Tags：<?php the_tags(''); ?>
+    </div>
+    
 </article>
