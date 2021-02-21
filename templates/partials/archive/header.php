@@ -3,7 +3,7 @@
     <?php
       if (is_category()) {
         $category = get_the_category(); 
-        echo $category[0]->cat_name;;
+        echo $category[0]->cat_name;
 
       } elseif (function_exists('is_tag') && is_tag()) {
         single_tag_title('Tag : '); 
@@ -11,14 +11,14 @@
       } elseif (is_archive()) {
         echo '彙整：'; echo get_the_archive_title('') ; 
 
-      } elseif (is_page()) {
-        echo wp_title(''); 
+      } elseif (is_home()) {
+        echo 'Blog'; 
 
       } elseif (is_search()) {
         echo '搜尋結果：'.wp_specialchars($s);
 
       } elseif (!(is_404()) && (is_single()) || (is_page())) {
-        echo the_title(); 
+        echo wp_title(''); 
 
       } elseif (is_404()) {
         echo 'Not Found';

@@ -6,6 +6,4 @@
   <? get_sidebar('sidebar', $args); ?>
 </main>
 
-<?
-// get_sidebar();
-get_footer();?>
+<? get_footer();?>
