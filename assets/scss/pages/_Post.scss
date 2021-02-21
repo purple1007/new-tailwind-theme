@@ -63,6 +63,10 @@
       & li { @apply mb-1; }
     }
 
+    &__tags {
+      @apply mt-5 border-t border-brown-200 pt-5 text-sm;
+    }
+
     &___footer {
       @apply w-full;
 
@@ -83,6 +87,7 @@
         }
       }
     }
+
     &__back_btn { 
       @apply mt-10 text-center border-b border-black pb-12;
       @screen md {
