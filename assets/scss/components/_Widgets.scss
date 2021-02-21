@@ -34,3 +34,10 @@ $module: '.custom_widget';
     }
   }
 }
+
+#{$module} .ml-form-embedWrapper {
+  div.ml-form-successBody, 
+  div.ml-form-embedBody {
+    padding: 0 !important;
+  }
+}
