@@ -25,6 +25,8 @@
 
 <body <?php body_class(); ?> >
 <?php wp_body_open(); ?>
+<?php if ( function_exists( 'gtm4wp_the_gtm_tag' ) ) { gtm4wp_the_gtm_tag(); } ?>
+
 <div id="page" class="Site">
 
 <?php get_template_part( 'templates/partials/header' ); ?>
