@@ -1,6 +1,6 @@
 <div class='post_preview'>
   <?php if ( has_post_thumbnail()) : ?>
-    <div class='post_preview__thumbnail'>
+    <figure class='post_preview__thumbnail'>
       <a 
         href='<?php the_permalink() ?>'
         title='<?php the_title_attribute(); ?>'
@@ -10,7 +10,7 @@
       >
       <?php the_post_thumbnail(); ?>
       </a>
-    </div>
+    </figure>
   <?php endif; ?>
   <div class='post_preview__content'>
     <h2 class='post_preview__title'>

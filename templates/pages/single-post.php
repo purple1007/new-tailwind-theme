@@ -8,13 +8,13 @@
         echo $category[0]->cat_name; ?>
     </small>
     <?php if ( has_post_thumbnail()) : ?>
-      <div class="post__thumbnail">
+      <figure class="post__thumbnail">
         <?php the_post_thumbnail(); ?>
-      </div>
+      </figure>
     <?php endif; ?>
-    <div class="post__content">
+    <section class="post__content">
       <?php the_content(); ?>
-    </div>
+    </section>
     <div class="post__tags">
       Tags: 
       <?php
