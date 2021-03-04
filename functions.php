@@ -65,6 +65,21 @@ require get_stylesheet_directory() . '/includes/scripts-and-styles.php';
     return $title;
   });
 
+  add_filter( 'wp_generate_tag_cloud_data', 'my_tag_cloud_data', 10, 1 );
+
+  function my_tag_cloud_data( $tags_data ) {
+  
+      foreach ( $tags_data as $key => $tag ) {
+          $tags_data [ $key ] ['aria_label'] .=  '
+          data-event-category="SideBarWidgetTags"
+          data-event-action="Click" 
+          data-event-label="Tag/' . esc_attr( $tag['name'] ) . '" ';
+      }
+  
+      // return adjusted data
+      return $tags_data;
+  }
+
   // navbar
   function myMenus() {
     $locations = array (
