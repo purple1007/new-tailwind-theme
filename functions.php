@@ -81,7 +81,7 @@ require get_stylesheet_directory() . '/includes/scripts-and-styles.php';
   }
 
   // navbar
-  function myMenus() {
+  function menus() {
     $locations = array (
       'navigation' => 'Navigation Bar',
       'footer_menu' => 'Footer menu',
@@ -89,6 +89,25 @@ require get_stylesheet_directory() . '/includes/scripts-and-styles.php';
     );
     register_nav_menus($locations);
   }
-  add_action( 'init','myMenus' );
+  add_action( 'init','menus' );
 
+  function menus_atts( $atts, $item, $args ) {
+
+    if( $args->theme_location == 'navigation' ) {
+      $atts['data-event-category'] = 'navbar';
+    } 
+    elseif ( $args->theme_location == 'footer_menu' ) {
+      $atts['data-event-category'] = 'footer_menu';
+    } 
+    elseif ( $args->theme_location == 'footer_contact' ) {
+      $atts['data-event-category'] = 'footer_contact';
+    }
+    $atts['data-event-action'] = 'Click';
+    $atts['data-event-label'] = $atts['title'];
+    
+    return $atts;
+  }
+  add_filter( 'nav_menu_link_attributes', 'menus_atts', 10, 3 );
+  
+  
 ?>

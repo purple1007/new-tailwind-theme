@@ -11,7 +11,7 @@
           array(
             'theme_location'  => 'navigation',
             'container_class' => 'header__navigation__container',
-            'menu_class'     => 'header__navigation__links',
+            'menu_class'      => 'header__navigation__links',
             'fallback_cb'     => false,
           )
         );
