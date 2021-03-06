@@ -16,9 +16,9 @@
         </a>
       。我將會在這個部落格分享設計、生活的心得，如果想要了解更多 UI、網頁設計相關的文章，可以關注我和朋友一起共筆的部落格： 
         <a href="http://apodesign.tw/" target="_blank" rel="noopener nofollow noopener sponsored"
-           data-event-category='HomeBanner' 
-           data-event-action='Click'
-           data-event-label='Text - apo design'
+           data-event-category="HomeBanner"
+           data-event-action="Click"
+           data-event-label="Text - apo design"
         >
           一塊設計 | apo design
         </a>  

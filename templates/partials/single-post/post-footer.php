@@ -1,5 +1,5 @@
-<section class='post___footer'>
-  <div class='post___footer___container'>
+<section class="post___footer">
+  <div class="post___footer___container">
     <div>
       <span>上一篇</span>
       <h3>
@@ -14,11 +14,11 @@
     </div>
   </div>
 
-  <div class='post__back_btn'>
-    <a class='button__link' href='/blog'
-       data-event-category='SinglePost' 
-       data-event-action='Click'
-       data-event-label='回到部落格'
+  <div class="post__back_btn">
+    <a class="button__link" href="/blog"
+       data-event-category="SinglePost" 
+       data-event-action="Click"
+       data-event-label="回到部落格"
     >
       回到部落格
     </a>

@@ -23,8 +23,8 @@
               array(
                 'theme_location'  => 'footer_menu',
                 'container_class' => 'footer__menu__container',
-                'menu_class'     => 'footer__menu__links',
-                'depth'          => 1,
+                'menu_class'      => 'footer__menu__links',
+                'depth'           => 1,
               )
             );
           ?>

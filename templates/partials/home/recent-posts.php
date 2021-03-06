@@ -1,8 +1,8 @@
-<section class='recent_posts home__section'>
+<section class="recent_posts home__section">
   <h3>Recent articles ＿＿</h3>
-  <h2><a href='/blog'>近期的文章＿＿</a></h2>
+  <h2><a href="/blog">近期的文章＿＿</a></h2>
   
-  <div class='recent_posts__container'>
+  <div class="recent_posts__container">
     <?php
     $recent_posts = wp_get_recent_posts(array(
         'numberposts' => 4, 
@@ -10,11 +10,11 @@
     ));
     foreach( $recent_posts as $post_item ) : ?>
     <div>
-      <h3 class='recent_posts__title'>
-        <a href='<?php echo get_permalink($post_item['ID']) ?>'
-          data-event-category='HomeRecentPosts' 
-          data-event-action='Click'
-          data-event-label='<?php echo $post_item['post_title'] ?>/Title'
+      <h3 class="recent_posts__title">
+        <a href="<?php echo get_permalink($post_item['ID']) ?>"
+          data-event-category="HomeRecentPosts" 
+          data-event-action="Click"
+          data-event-label="<?php echo $post_item['post_title'] ?>/Title"
         >
           <?php echo $post_item['post_title'] ?>
         </a>
@@ -23,11 +23,11 @@
         echo $category[0]->cat_name; ?>
       </small>
         
-      <figure class='recent_posts__thumbnail'>
-        <a href='<?php echo get_permalink($post_item['ID']) ?>'
-            data-event-category='HomeRecentPosts' 
-            data-event-action='Click'
-            data-event-label='<?php echo $post_item['post_title'] ?>/Thumbnail'
+      <figure class="recent_posts__thumbnail">
+        <a href="<?php echo get_permalink($post_item['ID']) ?>"
+            data-event-category="HomeRecentPosts" 
+            data-event-action="Click"
+            data-event-label="<?php echo $post_item['post_title'] ?>/Thumbnail"
         >
           <?php echo get_the_post_thumbnail($post_item['ID'], ''); ?>
         </a>
@@ -37,11 +37,11 @@
     <?php endforeach; ?>
   </div>
   <div>
-  <div class='recent_posts__goBlog'>
-    <a class='button__link' href='/blog' 
-       data-event-category='HomeRecentPosts' 
-       data-event-action='Click'
-       data-event-label='閱讀更多文章'
+  <div class="recent_posts__goBlog">
+    <a class="button__link" href="/blog" 
+       data-event-category="HomeRecentPosts" 
+       data-event-action="Click"
+       data-event-label="閱讀更多文章"
     >
       閱讀更多文章
     </a>

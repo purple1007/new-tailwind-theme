@@ -1,7 +1,7 @@
 <header id="masthead" class="header">
   <nav id="site-navigation" class="header__navigation">
     <h1 class="header__navigation__site-name">
-      <a href="/">
+      <a href="/" data-event-category="Navigation" data-event-action="Click" data-event-label="Logo">
         <?php bloginfo( 'name' ); ?>
       </a>
     </h1>
