@@ -94,13 +94,13 @@ require get_stylesheet_directory() . '/includes/scripts-and-styles.php';
   function menus_atts( $atts, $item, $args ) {
 
     if( $args->theme_location == 'navigation' ) {
-      $atts['data-event-category'] = 'navbar';
+      $atts['data-event-category'] = 'Navigation';
     } 
     elseif ( $args->theme_location == 'footer_menu' ) {
-      $atts['data-event-category'] = 'footer_menu';
+      $atts['data-event-category'] = 'FooterMenu';
     } 
     elseif ( $args->theme_location == 'footer_contact' ) {
-      $atts['data-event-category'] = 'footer_contact';
+      $atts['data-event-category'] = 'FooterContact';
     }
     $atts['data-event-action'] = 'Click';
     $atts['data-event-label'] = $atts['title'];
