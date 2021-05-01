@@ -4849,10 +4849,12 @@ laravel-mix-tailwind@^0.1.0:
   resolved "https://registry.yarnpkg.com/laravel-mix-tailwind/-/laravel-mix-tailwind-0.1.1.tgz#1daf5f0267bef86e79cb3fe6b4a66b11741567b1"
   integrity sha512-Da8aolpXap+HnZ5k8UmimK5aRTmNBVEexpeKr9czmXQnuk8/hqPDJHv2RgWFnNjdremyJtzKE+rc3heyeEX5Rg==
 
-laravel-mix-versionhash@1.0.8:
-  version "1.0.8"
-  resolved "https://registry.yarnpkg.com/laravel-mix-versionhash/-/laravel-mix-versionhash-1.0.8.tgz#4887a339fa54ed3942b39664b6273fa26f46f94c"
-  integrity sha512-GdJVvqUdAgXD5Ty5vOxWXYpGBHG+ORA6JBA37CXyqGMVKYv+lDRsJiKby2mCyYdGd2JaPYWxur5TqSU+gPzVbA==
+laravel-mix-versionhash@1.1.7:
+  version "1.1.7"
+  resolved "https://registry.yarnpkg.com/laravel-mix-versionhash/-/laravel-mix-versionhash-1.1.7.tgz#cf611bc64fec8ac1e40b1ccbd71a25c8aa931459"
+  integrity sha512-Aj7q+IRriO6VFLU5EUJsyJULW2iiv/sDQRI+kxww2CZbtfPssjibBNrstxPkVtLcQaAwMB2V2efvMe9YeRzIpg==
+  dependencies:
+    proxy-method "^1.0.0"
 
 laravel-mix@^5.0.9:
   version "5.0.9"
@@ -6599,6 +6601,11 @@ proxy-addr@~2.0.5:
   dependencies:
     forwarded "~0.1.2"
     ipaddr.js "1.9.1"
+
+proxy-method@^1.0.0:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/proxy-method/-/proxy-method-1.0.0.tgz#0a05ac02f382df572e5af97456a50720646f75f5"
+  integrity sha512-KBLBVQ2ST9X3HPMJXPcW7+buB/AoltDrM8O8gMF5KleLfIhYt9TiVFKjk7Vt9hTTQ04pJP1z6kw6C+ofNvDjVg==
 
 prr@~1.0.1:
   version "1.0.1"
