@@ -32,7 +32,7 @@
       <?php the_excerpt();?>
     </div>
     <div>
-      <a href="<?php get_the_permalink(); ?>" 
+      <a href="<?php the_permalink() ?>" 
          class="post_preview__link" rel="nofollow"
          data-event-category="ArchivePost" 
          data-event-action="Click"
