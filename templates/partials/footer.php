@@ -35,7 +35,18 @@
       <small>Copyright © 2021 Debby Lin</small>
     </div>
     <a class="scroll_up" href="#">
-      <?php echo file_get_contents( get_stylesheet_directory_uri() . '/assets/img/materials/chevron-up.svg' ); ?>
+
+      <!-- 讓 file_get_contents 取消 ssl  -->
+      <?php 
+        $stream_opts = [
+          "ssl" => [
+            "verify_peer"=>false,
+            "verify_peer_name"=>false,
+          ]
+        ]; 
+        echo $response = file_get_contents( get_stylesheet_directory_uri() . '/assets/img/materials/chevron-up.svg', false, stream_context_create($stream_opts) );
+      ?>
+      
     </a>
   </footer><!-- .footer-navigation -->
 
