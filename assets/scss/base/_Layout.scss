@@ -1,5 +1,5 @@
 .custom_layout {
-  @apply flex flex-wrap max-w-screen-lg mx-auto px-8 mt-24 mb-20;
+  @apply flex flex-wrap max-w-screen-xl mx-auto px-8 mt-24 mb-20;
 
   @screen md {
     @apply px-10;
@@ -13,7 +13,7 @@
 .custom_container {
   @apply w-full;
 
-  @screen md {
+  @screen lg {
     @apply w-3/4 pr-10;
   }
 }
