@@ -11,10 +11,21 @@ $module: '.custom_widget';
   }
 }
 
+#{$module}.widget_categories {
+  ul {
+    @apply list-disc ml-4;
+
+    li {
+      @apply mb-1;
+    }
+  }
+}
+
 #{$module}.widget_tag_cloud {
   a {
     @apply px-2 py-1 mb-2 mr-2 bg-brown-100 inline-block;
     font-size: .7rem !important;
+
     &:hover {
       @apply bg-primary-100;
     }
@@ -24,15 +35,19 @@ $module: '.custom_widget';
 #{$module}.widget_recent_entries {
   ul {
     @apply list-disc;
-    padding-inline-start: 1rem;
 
-    li { 
-      @apply mb-2; 
+    li {
+      @apply mb-2;
+
       &::marker {
         @apply text-sm text-brown-500;
       }
     }
   }
+}
+
+#{$module}.widget_archive ul li {
+  @apply text-brown-400 mb-1;
 }
 
 #{$module} .ml-form-embedWrapper {
