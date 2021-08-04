@@ -1,7 +1,7 @@
 .custom_sidebar {
   @apply w-full flex flex-col mt-10 order-last;
 
-  @screen md {
+  @screen lg {
     @apply w-1/4 mt-0 order-none;
   }
 }
