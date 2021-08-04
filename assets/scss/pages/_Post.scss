@@ -15,19 +15,19 @@
 
     &__content {
       & h1,h2,h3,h4,h5,h6 { @apply font-bold font-serif mb-2; }
-      & h1 { @apply text-5xl mt-4; }
+      & h1 { @apply text-4xl mt-4; }
 
       & h2 {
-        @apply text-3xl border-b border-brown-200 text-primary-base pb-1 mt-5 mb-3; 
+        @apply text-2xl border-b border-brown-200 text-primary-base pb-1 mt-5 mb-3;
       }
 
-      & h3 { @apply text-2xl mt-5 mb-2; }
-      & h4 { @apply text-xl mt-2; }
+      & h3 { @apply text-xl mt-5 mb-2; }
+      & h4 { @apply text-lg mt-2; }
       & h5,h6 { @apply font-sans; }
 
       & img, iframe { @apply w-full my-3; }
 
-      & br { 
+      & br {
         content: "";
         @apply mb-2 block;
       }
@@ -45,7 +45,7 @@
         & p { @apply text-xl ; }
       }
 
-      & hr { @apply border-brown-300 my-4; }
+      & hr { @apply border-brown-200 my-4; }
 
       & ol, ul { @apply my-4 ml-5; }
       & ol { @apply list-decimal; }
