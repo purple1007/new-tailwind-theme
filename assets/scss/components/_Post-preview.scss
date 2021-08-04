@@ -1,5 +1,5 @@
 .post_preview {
-  @apply py-5 border-b flex flex-col  border-brown-800;
+  @apply py-5 flex flex-col;
 
   @screen md { @apply flex-row py-9; }
 
@@ -31,7 +31,7 @@
   }
 
   &__title {
-    @apply font-bold text-3xl font-serif;
+    @apply font-bold text-2xl font-serif;
 
     & a:hover {
       @apply text-primary-400 no-underline;
