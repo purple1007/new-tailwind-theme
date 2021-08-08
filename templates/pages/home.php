@@ -35,5 +35,7 @@
 
   <?php get_template_part( 'templates/partials/home/working-on' ); ?>
   
+  <?php get_template_part( 'templates/partials/home/recent-works' ); ?>
+
   <?php get_template_part( 'templates/partials/home/recent-posts' );?>
 </article>
