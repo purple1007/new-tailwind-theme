@@ -1,0 +1,16 @@
+.recent_works {
+  #rl-gallery-container-1 .rl-gallery {
+    @apply grid grid-cols-1 gap-8 md:grid-cols-2 md:gap-8 mt-8;
+
+    .rl-gallery-item {
+      height: 250px;
+      @apply w-full;
+
+      a.rl-gallery-link, img { @apply h-full; }
+    }
+  }
+
+  &__goWorks {
+    @apply text-center mt-10;
+  }
+}
