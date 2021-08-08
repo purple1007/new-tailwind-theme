@@ -1,0 +1,11 @@
+a.rl-gallery-link {
+  height: 200px;
+
+  @apply flex justify-center items-center overflow-hidden;
+
+  &:hover {
+    img {
+      @apply transform origin-center transition-all scale-105 duration-100 ease-in-out;
+    }
+  }
+}
