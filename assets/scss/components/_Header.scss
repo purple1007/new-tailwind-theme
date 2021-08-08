@@ -85,7 +85,7 @@
           @apply text-sm py-0 inline;
 
           &:hover {
-            @apply no-underline not-italic;
+            @apply underline not-italic;
           }
         }
       }
