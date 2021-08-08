@@ -1,5 +1,9 @@
 .custom_page.works {
   & > h1 {
-    display: none;
+    @apply hidden;
+  }
+
+  .works__goHome {
+    @apply mt-10 text-center ;
   }
 }
