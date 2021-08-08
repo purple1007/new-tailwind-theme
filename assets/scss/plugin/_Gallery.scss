@@ -1,11 +1,19 @@
-a.rl-gallery-link {
-  height: 200px;
+#rl-gallery-1.works_gallery {
+  @apply grid grid-cols-1 gap-4 md:grid-cols-3 md:gap-4 lg:grid-cols-4 mt-8;
 
-  @apply flex justify-center items-center overflow-hidden;
+  .rl-gallery-item {
+    width: 100% !important;
+  }
 
-  &:hover {
-    img {
-      @apply transform origin-center transition-all scale-105 duration-100 ease-in-out;
+  .rl-gallery-link {
+    height: 200px;
+
+    @apply flex justify-center items-center overflow-hidden m-0 w-full;
+
+    &:hover {
+      img {
+        @apply transform origin-center transition-all scale-105 duration-100 ease-in-out;
+      }
     }
   }
 }
