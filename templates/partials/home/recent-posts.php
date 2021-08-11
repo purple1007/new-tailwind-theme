@@ -10,6 +10,16 @@
     ));
     foreach( $recent_posts as $post_item ) : ?>
     <div>
+      <figure   class="recent_posts__thumbnail">
+        <a href="<?php echo get_permalink($post_item['ID']) ?>"
+            data-event-category="HomeRecentPosts" 
+            data-event-action="Click"
+            data-event-label="<?php echo $post_item['post_title'] ?>/Thumbnail"
+        >
+          <?php echo get_the_post_thumbnail($post_item['ID'], ''); ?>
+        </a>
+      </figure>
+      
       <h3 class="recent_posts__title">
         <a href="<?php echo get_permalink($post_item['ID']) ?>"
           data-event-category="HomeRecentPosts" 
@@ -22,17 +32,6 @@
       <small><?php echo date('n/j/Y', strtotime($post_item['post_date'])); ?>・<?php $category = get_the_category($post_item['ID']); 
         echo $category[0]->cat_name; ?>
       </small>
-        
-      <figure class="recent_posts__thumbnail">
-        <a href="<?php echo get_permalink($post_item['ID']) ?>"
-            data-event-category="HomeRecentPosts" 
-            data-event-action="Click"
-            data-event-label="<?php echo $post_item['post_title'] ?>/Thumbnail"
-        >
-          <?php echo get_the_post_thumbnail($post_item['ID'], ''); ?>
-        </a>
-      </figure>
-      
     </div>
     <?php endforeach; ?>
   </div>
