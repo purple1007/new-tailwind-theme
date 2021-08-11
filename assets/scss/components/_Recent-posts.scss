@@ -12,16 +12,16 @@
   }
 
   &__title {
-    @apply text-2xl font-bold font-serif;
+    @apply text-xl font-bold font-serif;
   }
 
   &__thumbnail {
-    @apply overflow-hidden mt-2 h-40 flex justify-center items-center;
+    @apply overflow-hidden mb-2 h-44 flex justify-center items-center;
 
-    @screen md { @apply h-44 mt-3; }
+    @screen md { @apply h-52 mt-3; }
 
     img {
-      @apply object-center object-cover transition-all duration-75;
+      @apply object-center object-cover transition-all duration-100;
     }
   }
 
