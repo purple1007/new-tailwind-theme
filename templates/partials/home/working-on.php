@@ -58,9 +58,9 @@
       <h3>網頁開發</h3>
       <p>
         我喜歡 HTML / CSS 、是這些文字建構出畫面。透過 CSS 美化了網頁上死板板的畫面。經歷過長期與 JavaScript 的拉扯和撞牆後，近期我也慢慢理解 JS 強大之處；是 JS 影響、解決網頁上效能、開發等各式問題。很高興我還在學習它的路上。 <br />
-        我將會分享我的程式學習的心得在
+        我將會分享學習程式的心得在
         <a 
-          href="/category/learn-programming" 
+          href="/category/dev" 
           target="_self" rel="nofollow noopener sponsored"
           data-event-category="WorkingOn" 
           data-event-action="Click"
@@ -71,7 +71,7 @@
         。或是可以在 
         <a 
           href="https://github.com/purple1007"  
-          target="_blank" rel="noopener"
+          target="_blank" rel="nofollow noopener sponsored"
           data-event-category="WorkingOn" 
           data-event-action="Click"
           data-event-label="GitHub"
