@@ -23,11 +23,11 @@ $module: '.custom_widget';
 
 #{$module}.widget_tag_cloud {
   a {
-    @apply px-2 py-1 mb-2 mr-2 bg-brown-100 inline-block;
+    @apply px-2 py-1 mb-1 bg-brown-100 inline-block border border-brown-100;
     font-size: .7rem !important;
 
     &:hover {
-      @apply bg-primary-100;
+      @apply bg-brown-200 border-brown-400 ;
     }
   }
 }

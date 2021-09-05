@@ -9,7 +9,7 @@
     &__thumbnail { 
       @apply my-5 md:mb-8;
       & img {
-        @apply h-44 md:h-80 w-full object-cover object-center;
+        @apply h-full w-full object-cover object-center;
       }
     }
 
