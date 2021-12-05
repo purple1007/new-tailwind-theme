@@ -80,7 +80,7 @@
         @apply bg-brown-100 border-none text-brown-800 px-6 py-4 mb-8;
 
         & ul.toc_list > li {
-          @apply mb-3;
+          @apply mb-1;
           &:last-child { @apply mb-0; }
         }
 
