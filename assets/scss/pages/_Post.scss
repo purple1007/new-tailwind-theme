@@ -51,6 +51,7 @@
       & ol { @apply list-decimal; }
       & ul { @apply list-disc; }
 
+
       & ul li ul {
         list-style-type: revert;
         @apply my-1;
@@ -61,6 +62,19 @@
         @apply my-1;
       }
       & li { @apply mb-1; }
+
+      & .wp-caption {
+        width: 100% !important;
+        
+        @screen lg {
+          max-width: 847px !important;
+        }
+
+        & .wp-caption-text {
+          @apply text-xs text-brown-500 -mt-2;
+        }
+
+      }
     }
 
     &__tags {
