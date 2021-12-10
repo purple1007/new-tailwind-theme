@@ -5,7 +5,7 @@
     </h1>
 
     <p class="home__description">
-      Hi 我是 Debby ，我目前是位網頁設計師 / UI Designer ，從事設計的工作已經有五年的經歷了，做過平面設計、印刷設計，最後待在網頁設計、UI 設計。至今還是覺得透過程式碼刻出畫面、使用者透過 App 或網站服務完成許多事感到很神奇。<br />
+      Hi 我是 Debby ，我目前是位 Web Designer / UI Designer，從事設計的工作已經有五年的經歷了，做過平面設計、品牌設計，最後待在網站設計、UI 設計。至今還是覺得透過程式碼刻出畫面、使用者透過 App 或網站服務完成許多事感到很神奇。<br />
       你可以在
         <a href="/works" target="_self" rel="nofollow noopener sponsored"
            data-event-category="HomeBanner" 
@@ -13,7 +13,7 @@
            data-event-label="Text - 設計作品"
         >
           這邊
-        </a>看到我的設計作品。我將會在這個部落格分享設計、生活的心得，如果想要了解更多 UI、網頁設計相關的文章，可以關注我和朋友一起共筆的部落格： 
+        </a>看到我的設計作品。我將會在這個部落格分享 UI 設計、生活、工作的心得，如果想要了解更多 UI、網站設計相關的文章，歡迎關注我和朋友一起共筆的部落格： 
         <a href="http://apodesign.tw/" target="_blank" rel="noopener nofollow noopener sponsored"
            data-event-category="HomeBanner"
            data-event-action="Click"
