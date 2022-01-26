@@ -10,8 +10,8 @@
         
       <?php endwhile; endif; ?>
       
-    <? get_sidebar('sidebar', $args); ?>
+    <?php get_sidebar('sidebar', $args); ?>
     <?php get_template_part ("templates/partials/single-post/post-footer")?>
   </main>
   
-<? get_footer();?>
+<?php get_footer();?>

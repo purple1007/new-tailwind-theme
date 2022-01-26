@@ -10,4 +10,4 @@
   <?php get_template_part( 'templates/pages/works' );?>
 </main>
 
-<? get_footer();?>
+<?php get_footer();?>

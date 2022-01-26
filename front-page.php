@@ -4,4 +4,4 @@
   <?php get_template_part( 'templates/pages/home' ); ?>
 </main>
 
-<? get_footer();?>
+<?php get_footer();?>
