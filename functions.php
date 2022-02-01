@@ -112,7 +112,7 @@ require get_stylesheet_directory() . '/includes/scripts-and-styles.php';
   // 排除 Projects 文章在 Blog
   function exclude_category($query) {
     if ( $query->is_home() ) {
-      $query->set('cat', '-29');
+      $query->set('cat', '-29 -27');
     }
     return $query;
     }
