@@ -42,10 +42,10 @@ require get_stylesheet_directory() . '/includes/scripts-and-styles.php';
   add_theme_support( 'widgets' );
   function theme_slug_widgets_init() {
     register_sidebar( array(
-        'name' => __( '側邊欄', 'theme-slug' ),
+        'name' => __( '文章側邊欄', 'theme-slug' ),
         'id' => 'sidebar',
         'title' => 'sidebar',
-        'description' => __( '預設側邊欄', 'theme-slug' ),
+        'description' => __( '文章側邊欄', 'theme-slug' ),
         'before_widget' => '<div id="%1$s" class="custom_widget %2$s">',
         'after_widget'  => '</div>',
         'before_title'  => '<h3 class="custom_widget__title">',
@@ -108,6 +108,64 @@ require get_stylesheet_directory() . '/includes/scripts-and-styles.php';
     return $atts;
   }
   add_filter( 'nav_menu_link_attributes', 'menus_atts', 10, 3 );
-  
-  
+
+  // 排除 Projects 文章在 Blog
+  function exclude_category($query) {
+    if ( $query->is_home() ) {
+      $query->set('cat', '-29');
+    }
+    return $query;
+    }
+  add_filter('pre_get_posts', 'exclude_category');
+?>
+
+<?php
+  /**
+   * Plugin Name:   Enhance the wp_get_archive() function.
+   * Description:   Support the '_exclude_terms' parameter.
+   * Plugin URI:    https://wordpress.stackexchange.com/a/170535/26350
+   * Plugin Author: birgire
+   * Version:       0.0.1
+   */
+
+  add_action( 'init', function() {
+    $o = new WPSE_Archive_With_Exclude;
+    $o->init( $GLOBALS['wpdb'] );
+  });
+
+  class WPSE_Archive_With_Exclude
+  {
+    private $db = null;
+
+    public function init( wpdb $db )
+    {
+      if( ( $this->db = $db ) instanceof wpdb )
+        add_filter( 'getarchives_where', 
+        array( $this, 'getarchives_where' ), 10, 2 );
+    }
+
+    public function getarchives_where( $where, $r )
+    {
+      if( isset( $r['_exclude_terms'] ) )
+      {   
+        $_exclude_terms = $r['_exclude_terms'];
+        if( is_string( $_exclude_terms ) )
+          $_exclude_terms = explode( ',', $_exclude_terms );
+
+        if( is_array( $_exclude_terms ) )
+          $where .= $this->get_excluding_sql( $_exclude_terms );   
+      }
+      return $where;
+    }
+
+    private function get_excluding_sql( Array $terms )
+    {
+      $terms_csv = join( ',', array_map( 'absint', $terms ) );
+
+      return " AND ( {$this->db->posts}.ID NOT IN 
+        ( SELECT object_id FROM {$this->db->term_relationships} 
+        WHERE term_taxonomy_id IN ( $terms_csv ) ) )";
+    }
+
+  } // end class
 ?>
