@@ -1,0 +1,24 @@
+.project {
+  &.container {
+    @apply max-w-3xl mx-auto;
+  }
+
+  &___footer {
+    @apply mt-8;
+    h3 { @apply font-bold font-serif text-primary-base text-2xl text-center  mb-4; }
+    &___container {
+      @apply flex flex-col mb-6;
+      @screen md { @apply flex-row items-center; }
+    }
+    &__item {
+      @apply w-full;
+      @screen md { @apply w-1/2 px-2; }
+      img { @apply h-52 object-cover; }
+      :first-child {
+        @apply mb-4;
+        @screen md { @apply mb-0; }
+      }
+    }
+    .post__back_btn { @apply border-b-0; }
+  }
+}
