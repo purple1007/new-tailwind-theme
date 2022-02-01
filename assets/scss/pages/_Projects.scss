@@ -1,0 +1,20 @@
+.projects {
+  .summary { @apply mb-4; }
+  .custom_container {
+    @apply grid grid-cols-1 gap-6;
+    @screen md {
+      @apply grid-cols-2 gap-8 w-full;
+    }
+  }
+  .project_preview {
+    img {
+      @apply object-cover h-60;
+      @screen md {
+        @apply h-72;
+      }
+    }
+    &__title {
+      @apply text-2xl font-serif font-bold text-primary-base mt-2;
+    }
+  }
+}
