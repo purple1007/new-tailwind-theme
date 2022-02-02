@@ -1,125 +1,123 @@
-.custom_single_post {
-  .post {
-    &__detail { @apply text-brown-500; }
+.post {
+  &__detail { @apply text-brown-500; }
 
-    &__title {
-      @apply text-4xl text-primary-base font-serif mb-2 font-bold pt-3 md:pt-0;
+  &__title {
+    @apply text-4xl text-primary-base font-serif mb-2 font-bold pt-3 md:pt-0;
+  }
+
+  &__thumbnail { 
+    @apply my-5 md:mb-8;
+    & img {
+      @apply h-full w-full object-cover object-center;
+    }
+  }
+
+  &__content {
+    & h1,h2,h3,h4,h5,h6 { @apply font-bold font-serif mb-2; }
+    & h1 { @apply text-4xl mt-4; }
+
+    & h2 {
+      @apply text-2xl border-b border-brown-200 text-primary-base pb-1 mt-5 mb-3;
     }
 
-    &__thumbnail { 
-      @apply my-5 md:mb-8;
-      & img {
-        @apply h-full w-full object-cover object-center;
-      }
+    & h3 { @apply text-xl mt-5 mb-2; }
+    & h4 { @apply text-lg mt-2; }
+    & h5,h6 { @apply font-sans; }
+
+    & img, iframe { @apply w-full my-3; }
+
+    & br {
+      content: "";
+      @apply mb-2 block;
     }
 
-    &__content {
-      & h1,h2,h3,h4,h5,h6 { @apply font-bold font-serif mb-2; }
-      & h1 { @apply text-4xl mt-4; }
+    & > p { @apply mb-2; }
 
-      & h2 {
-        @apply text-2xl border-b border-brown-200 text-primary-base pb-1 mt-5 mb-3;
-      }
+    & p > code { @apply bg-brown-200 bg-opacity-50 py-0.5 px-1.5 text-sm text-primary-base font-sans rounded-sm; }
 
-      & h3 { @apply text-xl mt-5 mb-2; }
-      & h4 { @apply text-lg mt-2; }
-      & h5,h6 { @apply font-sans; }
-
-      & img, iframe { @apply w-full my-3; }
-
-      & br {
-        content: "";
-        @apply mb-2 block;
-      }
-
-      & > p { @apply mb-2; }
-
-      & p > code { @apply bg-brown-200 bg-opacity-50 py-0.5 px-1.5 text-sm text-primary-base font-sans rounded-sm; }
-
-      & blockquote {
-        @apply border-l-4 border-primary-base bg-brown-100 py-3 px-4 my-3 text-primary-400;
-      }
-
-      & blockquote.custom_quote {
-        @apply italic font-serif font-bold border-0 bg-opacity-0 p-0 my-5 py-4;
-        & p { @apply text-xl ; }
-      }
-
-      & hr { @apply border-brown-200 my-4; }
-
-      & ol, ul { @apply my-4 ml-5; }
-      & ol { @apply list-decimal; }
-      & ul { @apply list-disc; }
-
-
-      & ul li ul {
-        list-style-type: revert;
-        @apply my-1;
-      }
-
-      & ul li ul li ul {
-        list-style-type: square;
-        @apply my-1;
-      }
-      & li { @apply mb-1; }
-
-      & .wp-caption {
-        width: 100% !important;
-        
-        @screen lg {
-          max-width: 847px !important;
-        }
-
-        & .wp-caption-text {
-          @apply text-xs text-brown-500 -mt-2;
-        }
-
-      }
-
-      & #toc_container {
-        @apply bg-brown-100 border-none text-brown-800 px-6 py-4 mb-8;
-
-        & ul.toc_list > li {
-          @apply mb-1;
-          &:last-child { @apply mb-0; }
-        }
-
-        & .toc_title {
-          @apply text-left;
-        }
-      }
+    & blockquote {
+      @apply border-l-4 border-primary-base bg-brown-100 py-3 px-4 my-3 text-primary-400;
     }
 
-    &__tags {
-      @apply mt-5 border-t border-brown-200 pt-5 text-sm;
+    & blockquote.custom_quote {
+      @apply italic font-serif font-bold border-0 bg-opacity-0 p-0 my-5 py-4;
+      & p { @apply text-xl ; }
     }
 
-    &___footer {
-      @apply w-full;
+    & hr { @apply border-brown-200 my-4; }
 
-      &___container {
-        @apply border-t border-b border-black mt-8 grid gap-0 grid-cols-1;
+    & ol, ul { @apply my-4 ml-5; }
+    & ol { @apply list-decimal; }
+    & ul { @apply list-disc; }
 
-        @screen md { @apply grid-cols-2; }
 
-        & div:last-child {
-          @apply border-t md:border-t-0 md:border-l border-black;
-        }
-        & div {
-          @apply py-5 px-3 flex-wrap flex items-center;
-          & h3 { @apply font-serif font-bold; }
-          & span {
-            @apply text-xs text-brown-400 pr-2 border-r border-brown-400 mr-2;
-          }
+    & ul li ul {
+      list-style-type: revert;
+      @apply my-1;
+    }
+
+    & ul li ul li ul {
+      list-style-type: square;
+      @apply my-1;
+    }
+    & li { @apply mb-1; }
+
+    & .wp-caption {
+      width: 100% !important;
+      
+      @screen lg {
+        max-width: 847px !important;
+      }
+
+      & .wp-caption-text {
+        @apply text-xs text-brown-500 -mt-2;
+      }
+
+    }
+
+    & #toc_container {
+      @apply bg-brown-100 border-none text-brown-800 px-6 py-4 mb-8;
+
+      & ul.toc_list > li {
+        @apply mb-1;
+        &:last-child { @apply mb-0; }
+      }
+
+      & .toc_title {
+        @apply text-left;
+      }
+    }
+  }
+
+  &__tags {
+    @apply mt-5 border-t border-brown-200 pt-5 text-sm;
+  }
+
+  &___footer {
+    @apply w-full;
+
+    &___container {
+      @apply border-t border-b border-black mt-8 grid gap-0 grid-cols-1;
+
+      @screen md { @apply grid-cols-2; }
+
+      & div:last-child {
+        @apply border-t md:border-t-0 md:border-l border-black;
+      }
+      & div {
+        @apply py-5 px-3 flex-wrap flex items-center;
+        & h3 { @apply font-serif font-bold; }
+        & span {
+          @apply text-xs text-brown-400 pr-2 border-r border-brown-400 mr-2;
         }
       }
     }
+  }
 
-    &__back_btn { 
-      @apply mt-10 text-center border-b border-black pb-12;
-      @screen md {
-        @apply pb-0 border-none;
-      }
+  &__back_btn { 
+    @apply mt-10 text-center border-b border-black pb-12;
+    @screen md {
+      @apply pb-0 border-none;
     }
   }
 }

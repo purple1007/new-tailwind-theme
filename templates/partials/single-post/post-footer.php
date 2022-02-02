@@ -4,7 +4,7 @@
       <span>上一篇</span>
       <h3>
       <?php 
-        $prev_post = get_adjacent_post(false, '', true);
+        $prev_post = get_adjacent_post(false, '29,27', true);
         if(!empty($prev_post)) {
         echo '<a href="' . get_permalink($prev_post->ID) . '"
                  data-event-category="SinglePostFooter" 
@@ -19,7 +19,7 @@
       <span>下一篇</span>
       <h3>
         <?php 
-          $next_post = get_adjacent_post(false, '', false);
+          $next_post = get_adjacent_post(false, '29,27', false);
           if(!empty($next_post)) {
           echo '<a href="' . get_permalink($next_post->ID) . '"
                    data-event-category="SinglePostFooter" 

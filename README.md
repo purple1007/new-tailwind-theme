@@ -3,6 +3,19 @@
 - Website Link : https://www.debbylin.me/
 
 
+
+---
+
+## 排除 Projects
+為了在分類排除 Projects 底下的文章，在這些檔案都有排除：
+> 在 vscode 搜尋 `27` or `29` (Project 的分類 ID) 
+> - Local Project category ID : `29`
+> - Production Project category ID : `27`
+
+1. functions.php
+2. widget-archive.php
+3. post-footer.php
+
 ---
 
 
