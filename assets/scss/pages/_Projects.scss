@@ -7,11 +7,16 @@
     }
   }
   .project_preview {
+    &__thumbnail {
+      @apply overflow-hidden mb-2 h-60 flex justify-center items-center;
+      @screen md { @apply h-72; }
+    }
+    a:hover {
+      img { @apply transform scale-105;}
+    }
+    a { @apply h-full; }
     img {
-      @apply object-cover h-60;
-      @screen md {
-        @apply h-72;
-      }
+      @apply object-center object-cover transition-all duration-100 h-full;
     }
     &__title {
       @apply text-2xl font-serif font-bold text-primary-base mt-2;

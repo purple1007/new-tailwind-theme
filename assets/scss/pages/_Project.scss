@@ -11,9 +11,14 @@
       @screen md { @apply flex-row items-center; }
     }
     &__item {
-      @apply w-full;
+      @apply w-full overflow-hidden h-60 flex justify-center items-center;
       @screen md { @apply w-1/2 px-2; }
-      img { @apply h-52 object-cover; }
+      a { @apply h-full; }
+      a:hover {
+        img { @apply transform scale-105; }
+      }
+      img { @apply object-center object-cover transition-all duration-100 h-full; }
+      
       :first-child {
         @apply mb-4;
         @screen md { @apply mb-0; }
