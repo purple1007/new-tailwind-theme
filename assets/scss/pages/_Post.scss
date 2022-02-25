@@ -29,7 +29,7 @@
     & h4 { @apply text-lg mt-2; }
     & h5,h6 { @apply font-sans; }
 
-    & img, iframe { @apply w-full my-3; }
+    & img, iframe { @apply my-3; }
 
     & br {
       content: "";
@@ -39,6 +39,10 @@
     & > p { @apply mb-2; }
 
     & p > code, & li > code { @apply bg-brown-200 bg-opacity-50 py-0.5 px-1.5 text-sm text-primary-base font-sans rounded-sm; }
+
+    & .hcb_wrap.hcb_wrap {
+      @apply my-3;
+    }
 
     & .hcb_wrap.hcb_wrap pre {
       @apply p-6;
