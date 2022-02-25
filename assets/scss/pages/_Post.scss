@@ -40,7 +40,7 @@
     & p > code, & li > code { @apply bg-brown-200 bg-opacity-50 py-0.5 px-1.5 text-sm text-primary-base font-sans rounded-sm; }
 
     & .hcb_wrap.hcb_wrap pre {
-      @apply pt-3 px-6 pb-6;
+      @apply p-6;
       background: #2d2d2d;
     }
     & .hcb_wrap.hcb_wrap code {
