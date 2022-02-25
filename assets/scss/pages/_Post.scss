@@ -15,7 +15,7 @@
   &__content {
     & h1,h2,h3,h4,h5,h6 { 
       & code {
-        @apply bg-brown-200 bg-opacity-50 py-0.5 px-1.5 text-primary-base font-sans rounded-sm;
+        @apply bg-brown-200 bg-opacity-50 py-0.5 px-1.5 text-primary-base font-serif rounded-sm;
       }
       @apply font-bold font-serif mb-2; 
     }
