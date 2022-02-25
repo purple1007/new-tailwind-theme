@@ -47,6 +47,10 @@
       background: #2d2d2d;
     }
 
+    & .hcb_wrap.hcb_wrap code, & .hcb_wrap.hcb_wrap pre {
+      text-shadow: none;
+      color: #ccc;
+    }
     & blockquote {
       @apply border-l-4 border-primary-base bg-brown-100 py-3 px-4 my-3 text-primary-400;
     }
