@@ -24,6 +24,10 @@
     & h4 { @apply text-lg mt-2; }
     & h5,h6 { @apply font-sans; }
 
+    & h2 > code, & h3 > code, & h4 > code, & h5 > code {
+      @apply bg-brown-200 bg-opacity-50 py-0.5 px-1.5 text-primary-base font-sans rounded-sm;
+    }
+
     & img, iframe { @apply w-full my-3; }
 
     & br {
@@ -33,7 +37,15 @@
 
     & > p { @apply mb-2; }
 
-    & p > code { @apply bg-brown-200 bg-opacity-50 py-0.5 px-1.5 text-sm text-primary-base font-sans rounded-sm; }
+    & p > code, & li > code { @apply bg-brown-200 bg-opacity-50 py-0.5 px-1.5 text-sm text-primary-base font-sans rounded-sm; }
+
+    & .hcb_wrap.hcb_wrap pre {
+      @apply pt-3 px-6 pb-6;
+      background: #2d2d2d;
+    }
+    & .hcb_wrap.hcb_wrap code {
+      background: #2d2d2d;
+    }
 
     & blockquote {
       @apply border-l-4 border-primary-base bg-brown-100 py-3 px-4 my-3 text-primary-400;
@@ -49,7 +61,6 @@
     & ol, ul { @apply my-4 ml-5; }
     & ol { @apply list-decimal; }
     & ul { @apply list-disc; }
-
 
     & ul li ul {
       list-style-type: revert;
