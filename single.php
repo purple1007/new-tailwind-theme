@@ -6,7 +6,7 @@
       get_template_part ("templates/pages/single-project");
     } else {
       get_template_part ("templates/pages/single-post");
-      get_sidebar('sidebar', $args); 
+      get_sidebar('sidebar'); 
       get_template_part ("templates/partials/single-post/post-footer");
     } ?>
   </main>
