@@ -32,7 +32,7 @@
       </div>
     </div>
     <div class="footer__copyright">
-      <small>Copyright © 2021 Debby Lin</small>
+      <small>Copyright ©<script>document.writeln(new Date().getFullYear());</script> Debby Lin</small>
     </div>
     <a class="scroll_up" href="#">
 
