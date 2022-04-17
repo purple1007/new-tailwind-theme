@@ -1,11 +1,7 @@
 const plugin = require('tailwindcss/plugin')
 
 module.exports = {
-  future: {
-      removeDeprecatedGapUtilities: true,
-      purgeLayersByDefault: true,
-  },
-  purge: [
+  content: [
       './*.php',
       './templates/**/*.php',
       './build/js/**/*.js',
