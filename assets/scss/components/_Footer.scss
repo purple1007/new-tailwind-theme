@@ -38,13 +38,13 @@
   }
 
   &__copyright {
-    @apply max-w-4xl mx-auto px-8;
+    @apply max-w-4xl mx-auto text-center;
 
     & small { @apply text-brown-400; }
   }
 
   .scroll_up {
-    @apply bg-brown-200 p-3 absolute bottom-5 md:bottom-8 right-8 hover:bg-brown-300;
+    @apply fixed bg-brown-300/[0.5] p-2 bottom-3 right-3 hover:bg-brown-200;
 
     svg {
       @apply stroke-current stroke-1 w-6 h-6 text-brown-800;
