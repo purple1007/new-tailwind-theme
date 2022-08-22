@@ -28,7 +28,7 @@
     "resolve-url-loader": "3.1.2",
     "sass": "^1.26.11",
     "sass-loader": "7.*",
-    "stylelint": "^13.8.0",
+    "stylelint": "^14.11.0",
     "stylelint-config-standard": "^20.0.0",
     "vue-template-compiler": "^2.6.12"
   },
