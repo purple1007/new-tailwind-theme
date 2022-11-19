@@ -1,6 +1,12 @@
 <section class="recent_posts home__section">
-  <h3>Recent articles ＿＿</h3>
-  <h2><a href="/blog">近期的文章＿＿</a></h2>
+  <h2>
+    <a href="/blog"
+       data-event-category="HomeRecentPosts" 
+       data-event-action="Click"
+       data-event-label="Articles"
+    >
+      Articles</a>
+  </h2>
   
   <div class="recent_posts__container">
     <?php
@@ -35,7 +41,6 @@
     </div>
     <?php endforeach; ?>
   </div>
-  <div>
   <div class="recent_posts__goBlog">
     <a class="button__link" href="/blog" 
        data-event-category="HomeRecentPosts" 
@@ -44,6 +49,5 @@
     >
       閱讀更多文章
     </a>
-  </div>
   </div>
 </section>

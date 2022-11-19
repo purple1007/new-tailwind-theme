@@ -23,19 +23,18 @@
         </a>。
     </p>
     <div>
-      <a class="button__link" href="/blog" 
+      <a class="button__link" href="/category/projects" 
         data-event-category="HomeBanner" 
         data-event-action="Click"
-        data-event-label="Blog"
+        data-event-label="Projects"
       >
-        閱讀我的文章
+        所有專案
       </a>
     </div>
   </section>
-
-  <?php get_template_part( 'templates/partials/home/working-on' ); ?>
   
+  <?php get_template_part( 'templates/partials/home/recent-projects' ); ?>
   <?php get_template_part( 'templates/partials/home/recent-works' ); ?>
-
-  <?php get_template_part( 'templates/partials/home/recent-posts' );?>
+  <?php get_template_part( 'templates/partials/home/recent-posts' ); ?>
+  
 </article>
