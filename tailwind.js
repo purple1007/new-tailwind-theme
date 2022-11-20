@@ -64,30 +64,6 @@ module.exports = {
     customPlugin: ['responsive', 'hover', 'focus', 'visited'],
   },
   plugins: [
-    plugin(function({ addComponents, theme }) {
-      const buttons = {
-        '.btn': {
-          padding: `${theme('spacing.2')} ${theme('spacing.4')}`,
-          borderRadius: theme('borderRadius.none'),
-          fontWeight: theme('fontWeight.400'),
-          fontSize: theme('fontSize.base'),
-          transitionProperty: 'all',
-          transitionDuration: '100ms'
-        },
-        '.btn-primary': {
-          backgroundColor: theme('colors.primary.base'),
-          color: theme('colors.primaryBg')
-        },
-        '.btn-secondary': {
-          backgroundColor: theme('colors.brown.100'),
-          color: theme('colors.primary.base'),
-          borderColor: theme('colors.primary.base'),
-          borderWidth: '1px',
-          borderStyle: 'solid',
-          padding: `calc(${theme('spacing.2')} - 1px) calc(${theme('spacing.4')} - 1px)`
-        }
-      }
-      addComponents(buttons, ['responsive', 'hover', 'focus', 'visited']) 
-    })
+    plugin(function({ addComponents, theme }) { })
   ]
 };

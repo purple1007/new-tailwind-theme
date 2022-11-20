@@ -4,7 +4,7 @@
   @screen md { @apply flex-row py-9; }
 
   &__thumbnail {
-    @apply inline-block w-full h-36 mb-3 overflow-hidden;
+    @apply inline-block w-full h-36 mb-3 overflow-hidden rounded-md;
 
     @screen md { @apply w-1/4 h-32 mb-0; }
 
@@ -32,10 +32,6 @@
 
   &__title {
     @apply font-bold text-2xl font-serif;
-
-    & a:hover {
-      @apply text-primary-400 no-underline;
-    }
   }
 
   &__excerpt {

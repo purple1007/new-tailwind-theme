@@ -16,7 +16,7 @@
   }
 
   &__thumbnail {
-    @apply overflow-hidden mb-2 h-44 flex justify-center items-center;
+    @apply overflow-hidden mb-2 h-44 flex justify-center items-center rounded-md;
 
     @screen md { @apply h-52 mt-3; }
     a { @apply h-full; }

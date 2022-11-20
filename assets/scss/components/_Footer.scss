@@ -44,7 +44,7 @@
   }
 
   .scroll_up {
-    @apply fixed bg-brown-300/[0.5] p-2 bottom-3 right-3 hover:bg-brown-200;
+    @apply fixed bg-brown-300/[0.5] p-2 bottom-3 right-3 hover:bg-brown-200 rounded;
 
     svg {
       @apply stroke-current stroke-1 w-6 h-6 text-brown-800;
