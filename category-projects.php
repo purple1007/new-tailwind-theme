@@ -17,7 +17,15 @@
       <p>目前尚無文章</p>
     <?php endif; ?>
   </div>
-  
+  <div class="goWorks">
+    <a class="button__link" href="/works" 
+      data-event-category="Works" 
+      data-event-action="Click"
+      data-event-label="Works"
+    >
+      Works
+    </a>
+  </div>
 </main>
 
 <?php get_footer();?>
