@@ -4,7 +4,7 @@
     <?php the_content(); ?>
   </div>
   <div class="works__goHome">
-  <a class="button__link" href="/category/projects" 
+    <a class="button__link" href="/category/projects" 
       data-event-category="Works" 
       data-event-action="Click"
       data-event-label="Projects"

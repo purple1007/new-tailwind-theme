@@ -72,7 +72,8 @@ module.exports = {
           fontWeight: theme('fontWeight.400'),
           fontSize: theme('fontSize.base'),
           transitionProperty: 'all',
-          transitionDuration: '100ms'
+          transitionDuration: '100ms',
+          display: 'inline-block'
         },
         '.btn-primary': {
           backgroundColor: theme('colors.primary.base'),
