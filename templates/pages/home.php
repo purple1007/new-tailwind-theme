@@ -28,7 +28,7 @@
         data-event-action="Click"
         data-event-label="Projects"
       >
-        所有專案
+        Projects
       </a>
     </div>
   </section>
