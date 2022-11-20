@@ -1,9 +1,10 @@
 .custom_page.works {
+  @apply w-full;
   & > h1 {
     @apply hidden;
   }
 
   .works__goHome {
-    @apply mt-10 text-center space-x-4;
+    @apply mt-10 text-center space-x-4 w-full;
   }
 }
