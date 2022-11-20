@@ -3,7 +3,9 @@
   & > h1 {
     @apply hidden;
   }
-
+  .rl-gallery-item { 
+    @apply rounded-md overflow-hidden; 
+  }
   .works__goHome {
     @apply mt-10 text-center space-x-4 w-full;
   }
