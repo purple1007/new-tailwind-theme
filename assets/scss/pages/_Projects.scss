@@ -6,6 +6,9 @@
       @apply grid-cols-2 gap-8 w-full;
     }
   }
+  .go_works {
+    @apply mt-10 text-center w-full;
+  }
   .project_preview {
     &__thumbnail {
       @apply overflow-hidden mb-2 h-60 flex justify-center items-center rounded-md;
@@ -22,7 +25,5 @@
       @apply text-2xl font-serif font-bold text-primary-base mt-2;
     }
   }
-  .goWorks {
-    @apply mt-10 text-center w-full;
-  }
+  
 }
