@@ -8,7 +8,7 @@
   &__thumbnail { 
     @apply my-5 md:mb-8;
     & img {
-      @apply h-full w-full object-cover object-center;
+      @apply h-full w-full object-cover object-center rounded-md;
     }
   }
 
@@ -45,7 +45,7 @@
     }
 
     & .hcb_wrap.hcb_wrap pre {
-      @apply p-6;
+      @apply p-6 rounded;
       background: #2d2d2d;
     }
     & .hcb_wrap.hcb_wrap code {

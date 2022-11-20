@@ -76,18 +76,13 @@
 
       a {
         @apply text-lg font-bold py-1 block transition duration-150 ;
-
-        &:hover {
-          @apply text-primary-base;
-        }
-
         @screen md {
-          @apply text-sm py-0 inline;
-
+          @apply text-sm p-2 inline rounded;
           &:hover {
-            @apply underline not-italic;
+            @apply bg-brown-100;
           }
         }
+        
       }
     }
 
@@ -106,9 +101,10 @@
 
       @screen md {
         ul.sub-menu {
-          top: 63px;
+          top: 50px;
+          left: 4px;
 
-          @apply hidden absolute m-0 left-0 bg-primaryBg border border-brown-800;
+          @apply hidden absolute m-0 left-0 bg-primaryBg border border-brown-800 rounded-md overflow-hidden;
         }
       }
 

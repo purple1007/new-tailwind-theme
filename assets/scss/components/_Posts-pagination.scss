@@ -11,10 +11,10 @@
     span { @apply p-1; }
 
     a {
-      @apply text-brown-400 py-1 px-2;
+      @apply text-brown-400 py-1 px-2 rounded;
 
       &:hover {
-        @apply no-underline not-italic text-primary-base bg-brown-100 ;
+        @apply no-underline not-italic text-primaryBg bg-primary-base ;
       }
     }
   }

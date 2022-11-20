@@ -17,13 +17,14 @@ body {
 
 a {
   @apply text-primary-base transition duration-100;
-
-  &:hover { @apply  underline transition duration-100; }
+  &:hover { @apply  text-primary-700 no-underline transition duration-100; }
 }
 
 .wp-block-separator {
   @apply border-0 border-b border-brown-800;
 }
+
+img { @apply rounded; }
 
 p {
   @apply text-base;

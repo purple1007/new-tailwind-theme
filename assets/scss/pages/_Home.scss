@@ -37,14 +37,6 @@
 
       .button {
         @apply mt-8;
-        &__link,
-        &__link:visited {
-          @apply btn btn-secondary;
-
-          &:hover {
-            @apply bg-primary-base text-primaryBg;
-          }
-        }
       }
 
       &__column {
