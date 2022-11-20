@@ -3,7 +3,11 @@
   &__link:visited {
     @apply btn btn-primary;
   }
-  &__link:hover {
+  &__link:hover,
+  &__link_outline:hover {
     @apply text-primaryBg no-underline not-italic bg-primary-400;
+  }
+  &__link_outline {
+    @apply btn btn-secondary;
   }
 }
