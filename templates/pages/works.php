@@ -4,7 +4,14 @@
     <?php the_content(); ?>
   </div>
   <div class="works__goHome">
-    <a class="button__link" href="/" 
+  <a class="button__link" href="/category/projects" 
+      data-event-category="Works" 
+      data-event-action="Click"
+      data-event-label="Projects"
+    >
+      查看專案
+    </a>
+    <a class="button__link_outline" href="/" 
       data-event-category="Works" 
       data-event-action="Click"
       data-event-label="回首頁"

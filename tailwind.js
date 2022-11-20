@@ -80,7 +80,11 @@ module.exports = {
         },
         '.btn-secondary': {
           backgroundColor: theme('colors.brown.100'),
-          color: theme('colors.primary.base')
+          color: theme('colors.primary.base'),
+          borderColor: theme('colors.primary.base'),
+          borderWidth: '1px',
+          borderStyle: 'solid',
+          padding: `calc(${theme('spacing.2')} - 1px) calc(${theme('spacing.4')} - 1px)`
         }
       }
       addComponents(buttons, ['responsive', 'hover', 'focus', 'visited']) 
