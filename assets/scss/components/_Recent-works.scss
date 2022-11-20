@@ -4,7 +4,7 @@
 
     .rl-gallery-item {
       height: 250px;
-      @apply w-full;
+      @apply w-full rounded-md overflow-hidden;
 
       a.rl-gallery-link, img { @apply h-full; }
     }
