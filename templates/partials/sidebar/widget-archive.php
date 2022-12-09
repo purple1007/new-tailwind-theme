@@ -1,5 +1,5 @@
 <div class="custom_widget widget_archive">
-  <h3 class="custom_widget__title">彙整</h3>
+  <h3 class="custom_widget__title">Archive</h3>
   <ul>
     <?php
       wp_get_archives( 
