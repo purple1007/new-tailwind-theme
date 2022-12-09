@@ -5,6 +5,9 @@
     @screen md {
       @apply grid-cols-2 gap-8 w-full;
     }
+    @screen lg {
+      @apply pr-0;
+    }
   }
   .go_works {
     @apply mt-10 text-center w-full;
