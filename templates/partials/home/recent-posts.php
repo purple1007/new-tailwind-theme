@@ -45,9 +45,9 @@
     <a class="button__link" href="/blog" 
        data-event-category="HomeRecentPosts" 
        data-event-action="Click"
-       data-event-label="閱讀更多文章"
+       data-event-label="More articles"
     >
-      閱讀更多文章
+      More articles
     </a>
   </div>
 </section>

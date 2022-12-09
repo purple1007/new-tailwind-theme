@@ -9,14 +9,7 @@
       data-event-action="Click"
       data-event-label="Projects"
     >
-      查看專案
-    </a>
-    <a class="button__outline" href="/" 
-      data-event-category="Works" 
-      data-event-action="Click"
-      data-event-label="回首頁"
-    >
-      回首頁
+      Projects
     </a>
   </div>
 </article>
