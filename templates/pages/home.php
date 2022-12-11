@@ -1,11 +1,11 @@
 <article class="custom_home">
   <section class="home__section">
     <h1>Hi! I’m Debby.<br />
-      I’m a Web Designer &amp; UI Designer.
+      I’m a product designer.
     </h1>
 
     <p class="home__description">
-      Hi 我是 Debby ，我目前是位 Web Designer / UI Designer，從事設計的工作已經有五年的經歷了，做過平面設計、品牌設計，最後待在網站設計、UI 設計。至今還是覺得透過程式碼刻出畫面、使用者透過 App 或網站服務完成許多事感到很神奇。<br />
+      Hi 我是 Debby ，我目前是位 product designer ,從事設計的工作已經有五年的經歷了，做過平面設計、品牌設計，最後待在網站設計、UI 設計。至今還是覺得透過程式碼刻出畫面、使用者透過 App 或網站服務完成許多事感到很神奇。<br />
       你可以在
         <a href="/works" target="_self" rel="nofollow noopener sponsored"
            data-event-category="HomeBanner" 
