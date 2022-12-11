@@ -1,7 +1,7 @@
 <section class="post___footer">
   <div class="post___footer___container">
     <div>
-      <span>上一篇</span>
+      <span>Previous article</span>
       <h3>
       <?php 
         $prev_post = get_adjacent_post(false, '29,27', true);
@@ -16,7 +16,7 @@
       </h3>
     </div>
     <div>
-      <span>下一篇</span>
+      <span>Next article</span>
       <h3>
         <?php 
           $next_post = get_adjacent_post(false, '29,27', false);
@@ -36,9 +36,9 @@
     <a class="button__link" href="/blog"
        data-event-category="SinglePostFooter" 
        data-event-action="Click"
-       data-event-label="Link/回到部落格"
+       data-event-label="Link/Go back blog"
     >
-      回到部落格
+      Go back blog
     </a>
   </div>
 </section>

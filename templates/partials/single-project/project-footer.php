@@ -1,5 +1,5 @@
 <section class="project___footer">
-  <h3>更多專案</h3>
+  <h3>More projects</h3>
   <div class="project___footer___container">
     <?php 
       $prev_post = get_adjacent_post(false, '11,1,2,4', true,);
@@ -29,7 +29,7 @@
        data-event-action="Click"
        data-event-label="Link/回到專案列表"
     >
-      回到專案列表
+      Go back projects
     </a>
   </div>
 </section>
