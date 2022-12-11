@@ -13,8 +13,18 @@
   .home {
     &__description {
       @apply mb-10;
-      p {
+      p,li {
         @apply mb-2;
+        line-height: 1.7rem;
+      }
+      ul {
+        @apply my-3;
+      }
+      & a {
+        @apply border-brown-300 border-b-2;
+      }
+      & a:hover {
+        @apply border-primary-600;
       }
     }
 

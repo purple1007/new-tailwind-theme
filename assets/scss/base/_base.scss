@@ -29,3 +29,13 @@ img { @apply rounded; }
 p {
   @apply text-base;
 }
+
+main {
+  ul {
+    @apply pl-4;
+  }
+  ul,li {
+    list-style: disc;
+  }
+}
+

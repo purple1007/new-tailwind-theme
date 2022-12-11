@@ -6,7 +6,7 @@
   }
 
   &__container {
-    @apply max-w-screen-xl mx-auto px-8 grid gap-14 mb-5;
+    @apply max-w-screen-xl mx-auto px-8 grid gap-14 mb-5 font-serif font-bold;
 
     @screen md {
       @apply grid-cols-2 gap-4 mb-10;
@@ -31,7 +31,7 @@
     }
 
     &__links {
-      @apply flex flex-wrap;
+      @apply flex flex-wrap font-serif font-bold;
 
       li { @apply mr-3 mb-3; }
     }
