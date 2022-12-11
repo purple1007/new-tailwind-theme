@@ -53,6 +53,37 @@ require get_stylesheet_directory() . '/includes/scripts-and-styles.php';
       ) );
   }
   add_action( 'widgets_init', 'theme_slug_widgets_init' );
+
+  function home_title_widget() {
+    register_sidebar( array(
+        'name' => __( '首頁標題' ),
+        'id' => 'home_title_widget',
+        'title' => 'home_title_widget',
+        'description' => __( '將會放在標題底下，建議使用文字小工具。將不會顯示小工具標題，僅會顯示內文。' ),
+        'before_widget' => '<div id="%1$s" class="home__title %2$s">',
+        'after_widget'  => '</div>',
+        'before_title'  => '<h3 class="custom_widget__title">',
+        'after_title'   => '</h3>',
+      ) );
+  }
+  add_action( 'widgets_init', 'home_title_widget' );
+
+  function home_description_widget() {
+    register_sidebar( array(
+        'name' => __( '首頁簡介區塊'),
+        'id' => 'home_description_widget',
+        'title' => 'home_description_widget',
+        'description' => __( '將會放在標題底下，建議使用文字小工具。將不會顯示小工具標題，僅會顯示內文。'),
+        'before_widget' => '<div id="%1$s" class="home__description %2$s">',
+        'after_widget'  => '</div>',
+        'before_title'  => '<h3 class="custom_widget__title">',
+        'after_title'   => '</h3>',
+      ) );
+  }
+  add_action( 'widgets_init', 'home_description_widget' );
+
+  
+
   
   add_filter('get_the_archive_title', function ($title) {
     if ( is_year() ) {
