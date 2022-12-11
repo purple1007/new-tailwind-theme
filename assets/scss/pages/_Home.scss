@@ -7,10 +7,15 @@
   h2 {
     @apply text-3xl md:text-4xl text-primary-base font-bold mb-6 md:mb-8 font-serif;
   }
-
+  .custom_widget__title {
+    display:none;
+  }
   .home {
     &__description {
       @apply mb-10;
+      p {
+        @apply mb-2;
+      }
     }
 
     &__section {
