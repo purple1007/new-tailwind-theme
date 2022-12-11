@@ -6,8 +6,8 @@
   .nav-links { @apply mx-auto my-5; }
 
   .page-numbers {
-    @apply flex flex-wrap justify-center;
-    li { @apply mx-1 text-sm; }
+    @apply flex flex-wrap justify-center list-none;
+    li { @apply mx-1 text-sm list-none; }
     span { @apply p-1; }
 
     a {
