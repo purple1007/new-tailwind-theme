@@ -13,9 +13,6 @@
   }
 
   &__content {
-    & p {
-      line-height: 1.7rem;
-    }
     
     & h1,h2,h3,h4,h5,h6 { 
       & code {
@@ -39,15 +36,15 @@
       content: "";
       @apply mb-2 block;
     }
-
+    
     & a {
-      @apply border-brown-300 border-b-2;
+      @apply underline underline-offset-4 decoration-2 decoration-primary-300;
     }
     & a:hover {
-      @apply border-primary-600;
+      @apply underline decoration-primary-600;
     }
 
-    & > p { @apply mb-2; }
+    & > p { @apply mb-3; }
 
     & p > code, & li > code { @apply bg-brown-200 bg-opacity-50 py-0.5 px-1.5 text-sm text-primary-base font-sans rounded-sm; }
 

@@ -14,18 +14,18 @@
     &__description {
       @apply mb-10;
       p,li {
-        @apply mb-2;
-        line-height: 1.7rem;
+        @apply mb-3;
       }
       ul {
         @apply my-3;
       }
       & a {
-        @apply border-brown-300 border-b-2;
+        @apply underline decoration-2  underline-offset-4 decoration-primary-200;
       }
       & a:hover {
-        @apply border-primary-600;
+        @apply underline decoration-primary-700;
       }
+      p { @apply leading-5;}
     }
 
     &__section {
