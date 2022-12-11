@@ -1,7 +1,7 @@
 <section class="post___footer">
   <div class="post___footer___container">
     <div>
-      <span>Previous article</span>
+      <span>Previous post</span>
       <h3>
       <?php 
         $prev_post = get_adjacent_post(false, '29,27', true);
@@ -16,7 +16,7 @@
       </h3>
     </div>
     <div>
-      <span>Next article</span>
+      <span>Next post</span>
       <h3>
         <?php 
           $next_post = get_adjacent_post(false, '29,27', false);

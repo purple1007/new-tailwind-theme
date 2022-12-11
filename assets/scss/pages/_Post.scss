@@ -13,6 +13,10 @@
   }
 
   &__content {
+    & p {
+      line-height: 1.7rem;
+    }
+    
     & h1,h2,h3,h4,h5,h6 { 
       & code {
         @apply bg-brown-200 bg-opacity-50 py-0.5 px-1.5 text-primary-base font-serif rounded-sm;
@@ -34,6 +38,13 @@
     & br {
       content: "";
       @apply mb-2 block;
+    }
+
+    & a {
+      @apply border-brown-300 border-b-2;
+    }
+    & a:hover {
+      @apply border-primary-600;
     }
 
     & > p { @apply mb-2; }

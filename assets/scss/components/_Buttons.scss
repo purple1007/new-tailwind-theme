@@ -12,3 +12,10 @@
     padding: calc(0.5rem - 1px) calc(1rem - 1px);
   }
 }
+.button + .button,
+button + button,
+.button__link + .button__link,
+.button__link + .button__outline
+ {
+  @apply ml-2;
+}

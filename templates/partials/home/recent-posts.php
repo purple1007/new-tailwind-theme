@@ -3,9 +3,9 @@
     <a href="/blog"
        data-event-category="HomeRecentPosts" 
        data-event-action="Click"
-       data-event-label="Articles"
+       data-event-label="Blog"
     >
-      Articles</a>
+      Blog</a>
   </h2>
   
   <div class="recent_posts__container">
@@ -45,9 +45,9 @@
     <a class="button__link" href="/blog" 
        data-event-category="HomeRecentPosts" 
        data-event-action="Click"
-       data-event-label="More articles"
+       data-event-label="More posts"
     >
-      More articles
+      More posts
     </a>
   </div>
 </section>
