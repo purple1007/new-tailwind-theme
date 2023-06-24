@@ -25,7 +25,7 @@
       @apply object-center object-cover transition-all duration-100 h-full;
     }
     &__title {
-      @apply text-2xl font-serif font-bold text-primary-base mt-2;
+      @apply text-2xl font-sans font-bold text-primary-base mt-2;
       
     }
   }

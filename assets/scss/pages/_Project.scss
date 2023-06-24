@@ -5,7 +5,7 @@
 
   &___footer {
     @apply mt-8;
-    h3 { @apply font-bold font-serif text-primary-base text-2xl text-center  mb-4; }
+    h3 { @apply font-bold font-sans text-primary-base text-2xl text-center  mb-4; }
     &___container {
       @apply flex flex-col mb-6;
       @screen md { @apply flex-row items-center; }
