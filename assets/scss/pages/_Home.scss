@@ -1,11 +1,11 @@
 .custom_home {
 
   h1 {
-    @apply font-serif text-4xl md:text-5xl md:leading-normal text-primary-base font-extrabold mb-10;
+    @apply font-sans text-4xl md:text-5xl md:leading-normal text-primary-base font-extrabold mb-10;
   }
 
   h2 {
-    @apply text-3xl md:text-4xl text-primary-base font-bold mb-6 md:mb-8 font-serif;
+    @apply text-3xl md:text-4xl text-primary-base font-bold mb-6 md:mb-8 font-sans;
   }
   .custom_widget__title {
     display:none;
@@ -32,7 +32,7 @@
       @apply pb-16 pt-8 border-black border-b;
 
       & > h3 {
-        @apply mb-2 text-brown-400 font-serif font-extrabold;
+        @apply mb-2 text-brown-400 font-sans font-extrabold;
       }
       &:last-child {
         @apply border-0;
@@ -43,7 +43,7 @@
       @apply grid gap-10 md:grid-cols-2 md:gap-10;
 
       h3 {
-        @apply text-xl font-extrabold text-primary-base mb-3 font-serif md:text-2xl;
+        @apply text-xl font-extrabold text-primary-base mb-3 font-sans md:text-2xl;
       }
 
       small {

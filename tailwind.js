@@ -27,13 +27,13 @@ module.exports = {
         colors: {
           primaryBg: '#F3F2F0',
           primary: {
-            base: '#F37960',
-            100: '#FCD9D2',
-            200: '#FAC6BB',
-            300: '#F69F8D',
-            400: '#F58C77',
-            600: '#F05B3D',
-            700: '#EE3E1A'
+            base: '#84a268',
+            100: '#D3DEC5',
+            200: '#C4D2B2',
+            300: '#B5C79F',
+            400: '#A6BC8C',
+            600: '#809D5F',
+            700: '#667D4B'
           },
           brown: {
             100: '#EFEBE7',

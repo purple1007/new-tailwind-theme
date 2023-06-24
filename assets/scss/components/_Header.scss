@@ -29,7 +29,7 @@
     }
 
     &__site-name {
-      @apply text-primary-base font-bold font-serif text-xl my-0;
+      @apply text-primary-base font-bold font-sans text-xl my-0;
     }
 
     &__close {
@@ -60,7 +60,7 @@
     }
 
     &__links {
-      @apply font-serif hidden;
+      @apply font-sans hidden;
 
       li {
         @apply block ml-0;

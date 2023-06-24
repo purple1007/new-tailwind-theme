@@ -2,7 +2,7 @@
   &__detail { @apply text-brown-500; }
 
   &__title {
-    @apply text-4xl text-primary-base font-serif mb-2 font-bold pt-3 md:pt-0;
+    @apply text-4xl text-primary-base font-sans mb-2 font-bold pt-3 md:pt-0;
   }
 
   &__thumbnail { 
@@ -16,9 +16,9 @@
     
     & h1,h2,h3,h4,h5,h6 { 
       & code {
-        @apply bg-brown-200 bg-opacity-50 py-0.5 px-1.5 text-primary-base font-serif rounded-sm;
+        @apply bg-brown-200 bg-opacity-50 py-0.5 px-1.5 text-primary-base font-mono rounded-sm;
       }
-      @apply font-bold font-serif mb-2; 
+      @apply font-bold font-sans mb-2; 
     }
     & h1 { @apply text-4xl mt-4; }
 
@@ -46,10 +46,13 @@
 
     & > p { @apply mb-3; }
 
-    & p > code, & li > code { @apply bg-brown-200 bg-opacity-50 py-0.5 px-1.5 text-sm text-primary-base font-sans rounded-sm; }
+    & p > code, & li > code { @apply bg-brown-200 bg-opacity-50 py-0.5 px-1.5 text-sm text-primary-base font-mono rounded-sm; }
 
     & .hcb_wrap.hcb_wrap {
       @apply my-3;
+    }
+    & .hcb_wrap.hcb_wrap code, .hcb_wrap.hcb_wrap span {
+      @apply font-mono;
     }
 
     & .hcb_wrap.hcb_wrap pre {
@@ -69,7 +72,7 @@
     }
 
     & blockquote.custom_quote {
-      @apply italic font-serif font-bold border-0 bg-opacity-0 p-0 my-5 py-4;
+      @apply italic font-sans font-bold border-0 bg-opacity-0 p-0 my-5 py-4;
       & p { @apply text-xl ; }
     }
 
@@ -134,7 +137,7 @@
       }
       & div {
         @apply py-5 px-3 flex-wrap flex items-center;
-        & h3 { @apply font-serif font-bold; }
+        & h3 { @apply font-sans font-bold; }
         & span {
           @apply text-xs text-brown-400 pr-2 border-r border-brown-400 mr-2;
         }

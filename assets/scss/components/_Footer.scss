@@ -6,7 +6,7 @@
   }
 
   &__container {
-    @apply max-w-screen-xl mx-auto px-8 grid gap-14 mb-5 font-serif font-bold;
+    @apply max-w-screen-xl mx-auto px-8 grid gap-14 mb-5 font-sans font-bold;
 
     @screen md {
       @apply grid-cols-2 gap-4 mb-10;
@@ -15,23 +15,23 @@
 
   &__contact {
     h1 {
-      @apply text-4xl font-serif font-extrabold text-primary-base mb-3 md:mb-5;
+      @apply text-4xl font-sans font-extrabold text-primary-base mb-3 md:mb-5;
     }
 
-    a { @apply text-brown-800; }
+    a { @apply text-brown-800 font-light; }
   }
 
   &__menu {
     h2 {
-      @apply text-4xl font-serif font-extrabold mb-3 md:mb-5;
+      @apply text-4xl font-sans font-extrabold mb-3 md:mb-5;
     }
 
     &__container {
-      a { @apply text-brown-400; }
+      a { @apply text-brown-400 font-light; }
     }
 
     &__links {
-      @apply flex flex-wrap font-serif font-bold;
+      @apply flex flex-wrap font-sans font-light;
 
       li { @apply mr-3 mb-3; }
     }
