@@ -16,7 +16,7 @@
     
     & h1,h2,h3,h4,h5,h6 { 
       & code {
-        @apply bg-brown-200 bg-opacity-50 py-0.5 px-1.5 text-primary-base font-sans rounded-sm;
+        @apply bg-brown-200 bg-opacity-50 py-0.5 px-1.5 text-primary-base font-mono rounded-sm;
       }
       @apply font-bold font-sans mb-2; 
     }
@@ -46,10 +46,13 @@
 
     & > p { @apply mb-3; }
 
-    & p > code, & li > code { @apply bg-brown-200 bg-opacity-50 py-0.5 px-1.5 text-sm text-primary-base font-sans rounded-sm; }
+    & p > code, & li > code { @apply bg-brown-200 bg-opacity-50 py-0.5 px-1.5 text-sm text-primary-base font-mono rounded-sm; }
 
     & .hcb_wrap.hcb_wrap {
       @apply my-3;
+    }
+    & .hcb_wrap.hcb_wrap code, .hcb_wrap.hcb_wrap span {
+      @apply font-mono;
     }
 
     & .hcb_wrap.hcb_wrap pre {

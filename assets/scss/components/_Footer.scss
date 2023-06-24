@@ -18,7 +18,7 @@
       @apply text-4xl font-sans font-extrabold text-primary-base mb-3 md:mb-5;
     }
 
-    a { @apply text-brown-800; }
+    a { @apply text-brown-800 font-light; }
   }
 
   &__menu {
@@ -27,11 +27,11 @@
     }
 
     &__container {
-      a { @apply text-brown-400; }
+      a { @apply text-brown-400 font-light; }
     }
 
     &__links {
-      @apply flex flex-wrap font-sans font-bold;
+      @apply flex flex-wrap font-sans font-light;
 
       li { @apply mr-3 mb-3; }
     }
