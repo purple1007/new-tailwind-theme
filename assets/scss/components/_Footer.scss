@@ -18,7 +18,7 @@
       @apply text-4xl font-sans font-extrabold text-primary-base mb-3 md:mb-5;
     }
 
-    a { @apply text-brown-800 font-light; }
+    a { @apply text-black font-light; }
   }
 
   &__menu {
@@ -47,7 +47,7 @@
     @apply fixed bg-brown-300/[0.5] p-2 bottom-3 right-3 hover:bg-brown-200 rounded;
 
     svg {
-      @apply stroke-current stroke-1 w-6 h-6 text-brown-800;
+      @apply stroke-current stroke-1 w-6 h-6 text-black;
     }
   }
 }
