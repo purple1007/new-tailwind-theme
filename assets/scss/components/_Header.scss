@@ -36,7 +36,7 @@
       @apply inline-block relative md:hidden;
 
       .line {
-        @apply w-8 my-2 border-b block border-brown-800 transform transition transition-transform duration-75 origin-center;
+        @apply w-8 my-2 border-b block border-black transform transition transition-transform duration-75 origin-center;
       }
       &:hover {
         @apply cursor-pointer;
@@ -104,7 +104,7 @@
           top: 50px;
           left: 4px;
 
-          @apply hidden absolute m-0 left-0 bg-primaryBg border border-brown-800 rounded-md overflow-hidden;
+          @apply hidden absolute m-0 left-0 bg-primaryBg border border-black rounded-md overflow-hidden;
         }
       }
 

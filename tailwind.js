@@ -11,11 +11,12 @@ module.exports = {
         padding: '1.5rem',
       },
       fontSize: {
-        'xs': '.7rem',
-        'sm': '.8rem',
-        'base': '.95rem',
-        'lg': '1.125rem',
-        'xl': '1.25rem',
+        'xxs': '10px',
+        'xs': '12px',
+        'sm': '13px',
+        'base': '15px',
+        'lg': '1.1rem',
+        'xl': '1.3rem',
         '2xl': '1.5rem',
         '3xl': '1.875rem',
         '4xl': '2.25rem',
@@ -35,6 +36,7 @@ module.exports = {
             600: '#809D5F',
             700: '#667D4B'
           },
+          black: '#474945',
           brown: {
             100: '#EFEBE7',
             200: '#E8DFD5',
