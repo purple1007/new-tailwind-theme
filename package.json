@@ -16,7 +16,7 @@
   "author": "Phil Kurth <phil@philkurth.com.au>",
   "license": "MIT",
   "devDependencies": {
-    "browser-sync": "^2.26.12",
+    "browser-sync": "^2.29.3",
     "browser-sync-webpack-plugin": "^2.2.2",
     "cross-env": "^7.0.3",
     "fs": "0.0.1-security",
