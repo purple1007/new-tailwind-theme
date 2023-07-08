@@ -10,7 +10,7 @@ html {
 }
 
 body {
-  @apply bg-primaryBg text-brown-800 font-sans;
+  @apply bg-primaryBg font-sans text-black;
 }
 
 ::selection { @apply bg-primary-base text-primaryBg; }
@@ -21,14 +21,12 @@ a {
 }
 
 .wp-block-separator {
-  @apply border-0 border-b border-brown-800;
+  @apply border-0 border-b border-black;
 }
 
 img { @apply rounded; }
 
-p {
-  @apply text-base;
-}
+p { @apply text-base;}
 
 main {
   ul {
@@ -36,6 +34,7 @@ main {
   }
   ul,li {
     list-style: disc;
+    @apply text-base;
   }
 }
 

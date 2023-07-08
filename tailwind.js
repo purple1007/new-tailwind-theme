@@ -11,11 +11,12 @@ module.exports = {
         padding: '1.5rem',
       },
       fontSize: {
-        'xs': '.7rem',
-        'sm': '.8rem',
-        'base': '.95rem',
-        'lg': '1.125rem',
-        'xl': '1.25rem',
+        'xxs': '10px',
+        'xs': '12px',
+        'sm': '13px',
+        'base': '15px',
+        'lg': '1.1rem',
+        'xl': '1.3rem',
         '2xl': '1.5rem',
         '3xl': '1.875rem',
         '4xl': '2.25rem',
@@ -27,14 +28,15 @@ module.exports = {
         colors: {
           primaryBg: '#F3F2F0',
           primary: {
-            base: '#F37960',
-            100: '#FCD9D2',
-            200: '#FAC6BB',
-            300: '#F69F8D',
-            400: '#F58C77',
-            600: '#F05B3D',
-            700: '#EE3E1A'
+            base: '#84a268',
+            100: '#D3DEC5',
+            200: '#C4D2B2',
+            300: '#B5C79F',
+            400: '#A6BC8C',
+            600: '#809D5F',
+            700: '#667D4B'
           },
+          black: '#474945',
           brown: {
             100: '#EFEBE7',
             200: '#E8DFD5',

@@ -4,7 +4,7 @@ $module: '.custom_widget';
   @apply mb-6;
 
   &__title {
-    @apply font-semibold border-brown-200 border-b mb-2 w-full;
+    @apply font-semibold mb-2 w-full;
   }
   li, a, p {
     @apply text-sm;
@@ -47,7 +47,13 @@ $module: '.custom_widget';
 }
 
 #{$module}.widget_archive ul li {
-  @apply text-brown-400 mb-1;
+  @apply text-brown-400 mb-1 text-brown-400 text-xxs;
+  &::marker { 
+    @apply text-black text-sm;
+  }
+  & a {
+    @apply text-sm;
+  }
 }
 
 #{$module} .ml-form-embedWrapper {
