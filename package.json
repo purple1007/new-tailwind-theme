@@ -30,7 +30,7 @@
     "sass-loader": "13.*",
     "stylelint": "^15.10.1",
     "stylelint-config-standard": "^29.0.0",
-    "vue-template-compiler": "^2.6.12"
+    "vue-template-compiler": "^2.7.14"
   },
   "dependencies": {
     "autoprefixer": "^10.1.0",
