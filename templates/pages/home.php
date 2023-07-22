@@ -6,6 +6,5 @@
   
   <?php get_template_part( 'templates/partials/home/recent-projects' ); ?>
   <?php get_template_part( 'templates/partials/home/recent-posts' ); ?>
-  <?php get_template_part( 'templates/partials/home/recent-works' ); ?>
   
 </article>
