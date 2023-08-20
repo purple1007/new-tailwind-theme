@@ -14,6 +14,7 @@
 
   &__content {
     
+    // 標題
     & h1,h2,h3,h4,h5,h6 { 
       & code {
         @apply bg-brown-200 bg-opacity-50 py-0.5 px-1.5 text-primary-base font-mono rounded-sm;
@@ -25,18 +26,18 @@
     & h2 {
       @apply text-2xl border-b border-brown-200 text-primary-base pb-1 mt-5 mb-3;
     }
-
     & h3 { @apply text-xl mt-5 mb-2; }
     & h4 { @apply text-lg mt-2; }
     & h5,h6 { @apply font-sans; }
-
-    & img, iframe { @apply my-3; }
 
     & br {
       content: "";
       @apply mb-2 block;
     }
+
+    & hr { @apply border-brown-200 my-4; }
     
+    // 連結與按鈕
     & a {
       @apply underline underline-offset-4 decoration-2 decoration-primary-300;
     }
@@ -49,15 +50,16 @@
 
     & > p { @apply mb-3; }
 
-    & p > code, & li > code { @apply bg-brown-200 bg-opacity-50 py-0.5 px-1.5 text-sm text-primary-base font-mono rounded-sm; }
-
+    // 程式碼
+    & p > code, & li > code { 
+      @apply bg-brown-200 bg-opacity-50 py-0.5 px-1.5 text-sm text-primary-base font-mono rounded-sm;
+    }
     & .hcb_wrap.hcb_wrap {
       @apply my-3;
     }
     & .hcb_wrap.hcb_wrap code, .hcb_wrap.hcb_wrap span {
       @apply font-mono;
     }
-
     & .hcb_wrap.hcb_wrap pre {
       @apply p-6 rounded;
       background: #2d2d2d;
@@ -65,37 +67,45 @@
     & .hcb_wrap.hcb_wrap code {
       background: #2d2d2d;
     }
-
     & .hcb_wrap.hcb_wrap code, & .hcb_wrap.hcb_wrap pre {
       text-shadow: none;
       color: #ccc;
     }
+
+    // 引文
     & blockquote {
       @apply border-l-4 border-primary-600 bg-brown-100 py-3 px-4 my-3 text-primary-base;
     }
-
-    & blockquote.custom_quote {
+    & blockquote.custom_quote, .wp-block-pullquote > blockquote {
       @apply italic font-sans font-bold border-0 bg-opacity-0 p-0 my-5 py-4;
       & p { @apply text-xl ; }
     }
+    & .wp-block-pullquote {
+      @apply p-0;
+    }
 
-    & hr { @apply border-brown-200 my-4; }
+    // 詩句
+    & .wp-block-verse {
+      @apply text-black opacity-60 px-4 py-2 bg-brown-100 my-2;
+    }
+    
 
+    // 清單
     & ol, ul { @apply my-4 ml-5; }
     & ol { @apply list-decimal; }
     & ul { @apply list-disc; }
-
     & ul li ul {
       list-style-type: revert;
       @apply my-1;
     }
-
     & ul li ul li ul {
       list-style-type: square;
       @apply my-1;
     }
     & li { @apply mb-1; }
 
+    // 圖片與描述
+    & img, iframe { @apply my-3; }
     & .wp-caption {
       width: 100% !important;
       
@@ -106,9 +116,10 @@
       & .wp-caption-text {
         @apply text-xs text-brown-500 -mt-2;
       }
-
+    
     }
 
+    // 大綱樣式
     & #toc_container {
       @apply bg-brown-100 border-none text-black px-6 py-4 mb-8;
 
@@ -121,6 +132,24 @@
         @apply text-left;
       }
     }
+
+    // 詳細資料
+    & .wp-block-details {
+      @apply bg-brown-100 px-3 pt-2;
+      &:hover {
+        @apply bg-brown-200 transition-all;
+      }
+      &[open]:hover {
+        @apply bg-brown-100;
+      }
+      &[open] {
+        @apply pb-2;
+      }
+      & summary {
+        @apply font-bold mb-2;
+      }
+    }
+
   }
 
   &__tags {

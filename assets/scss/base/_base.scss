@@ -26,7 +26,7 @@ a {
 
 img { @apply rounded; }
 
-p { @apply text-base;}
+p, pre, details { @apply text-base;}
 
 main {
   ul {
