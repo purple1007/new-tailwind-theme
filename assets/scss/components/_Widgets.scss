@@ -13,7 +13,7 @@ $module: '.custom_widget';
 
 #{$module}.widget_categories {
   ul {
-    @apply list-disc ml-4;
+    @apply list-disc;
 
     li {
       @apply mb-1;
@@ -23,7 +23,7 @@ $module: '.custom_widget';
 
 #{$module}.widget_tag_cloud {
   a {
-    @apply px-2 py-1 mb-1 bg-brown-100 inline-block border border-brown-100 rounded;
+    @apply px-2 py-0 mb-1 bg-brown-100 inline-block border border-brown-100 rounded-xl;
     font-size: .7rem !important;
 
     &:hover {

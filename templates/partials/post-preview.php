@@ -1,18 +1,5 @@
 <div class="post_preview">
-  <?php if ( has_post_thumbnail()) : ?>
-    <figure class="post_preview__thumbnail">
-      <a 
-        href="<?php the_permalink() ?>"
-        title="<?php the_title_attribute(); ?>"
-        data-event-category="ArchivePost" 
-        data-event-action="Click"
-        data-event-label="<?php the_title(); ?>/Thumbnail"
-      >
-      <?php the_post_thumbnail(); ?>
-      </a>
-    </figure>
-  <?php endif; ?>
-  <div class="post_preview__content">
+<div class="post_preview__content">
     <h2 class="post_preview__title">
       <a 
         href="<?php the_permalink() ?>"
@@ -32,4 +19,18 @@
         echo $category[0]->cat_name; ?>
     </small>
   </div>
+  <?php if ( has_post_thumbnail()) : ?>
+    <figure class="post_preview__thumbnail">
+      <a 
+        href="<?php the_permalink() ?>"
+        title="<?php the_title_attribute(); ?>"
+        data-event-category="ArchivePost" 
+        data-event-action="Click"
+        data-event-label="<?php the_title(); ?>/Thumbnail"
+      >
+      <?php the_post_thumbnail(); ?>
+      </a>
+    </figure>
+  <?php endif; ?>
+
 </div>

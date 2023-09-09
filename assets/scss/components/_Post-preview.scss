@@ -18,12 +18,11 @@
       }
     }
 
-    & + .post_preview__content {
-      @apply inline-block w-full;
+  }
+  & .post_preview__content {
+    @apply inline-block w-full;
 
-      @screen md { @apply w-3/4 pl-3; }
-    }
-
+    @screen md { @apply w-4/5 pr-3; }
   }
 
   &__detail {
