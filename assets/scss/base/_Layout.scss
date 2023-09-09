@@ -1,5 +1,5 @@
 .custom_layout {
-  @apply flex flex-wrap max-w-screen-xl mx-auto px-8 mt-24 mb-20;
+  @apply flex flex-wrap max-w-4xl justify-center mx-auto px-8 mt-24 mb-20;
 
   @screen md {
     @apply px-10;
