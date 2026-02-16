@@ -1,7 +1,7 @@
 .button {
   &__link, 
   &__link:visited {
-    @apply py-2 px-4 rounded-full font-normal text-base transition-all duration-100 text-primaryBg bg-primary-base  no-underline;
+    @apply py-2 px-4 rounded-full font-normal text-base transition-all duration-100 text-primaryBg bg-primary-600  no-underline;
   }
   &__link:hover,
   &__outline:hover {

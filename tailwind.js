@@ -29,7 +29,7 @@ module.exports = {
         colors: {
           // Primary (--primary--0 對應 50，符合 Tailwind 慣用階層)
           primary: {
-            base: '#8FBE48',  // 向後相容，等同 primary-500
+            base: '#73A22E',  // 向後相容，等同 primary-500
             50: '#EBFAD4',
             100: '#DEF6BA',
             200: '#CEEF9E',
@@ -41,18 +41,17 @@ module.exports = {
             800: '#365408',
             900: '#182900',
           },
-          primaryBg: '#F0EBE1',  // 向後相容，等同 surface-primary (brown-50)
+          primaryBg: '#EFEBE7',  // 向後相容，等同 surface-primary (brown-50)
           black: '#1D1C1B',     // 向後相容，等同 gray-950
           brown: {
-            50: '#F0EBE1',
-            100: '#E8DFCE',
-            200: '#DCCFB6',
-            300: '#D0BF9E',
-            400: '#C4AF85',
-            500: '#B99F6D',
-            600: '#AD8F54',
-            700: '#957B48',
-            800: '#7D673C',
+            100: '#EFEBE7',
+            200: '#E8DFD5',
+            300: '#D9CBBA',
+            400: '#C3AC92',
+            500: '#B19472',
+            600: '#70593E',
+            700: '#4B3B29',
+            800: '#1E1811',
             900: '#645330',
             950: '#4C3F24',
           },
