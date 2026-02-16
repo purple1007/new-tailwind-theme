@@ -6,10 +6,10 @@
     "test": "tests"
   },
   "scripts": {
-    "webpack": "cross-env NODE_ENV=development webpack --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
-    "dev": "cross-env NODE_ENV=development webpack --watch --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
-    "hmr": "cross-env NODE_ENV=development webpack-dev-server --inline --hot --config=node_modules/laravel-mix/setup/webpack.config.js",
-    "prod": "cross-env NODE_ENV=production webpack --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
+    "webpack": "cross-env NODE_ENV=development NODE_OPTIONS=--openssl-legacy-provider webpack --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
+    "dev": "cross-env NODE_ENV=development NODE_OPTIONS=--openssl-legacy-provider webpack --watch --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
+    "hmr": "cross-env NODE_ENV=development NODE_OPTIONS=--openssl-legacy-provider webpack-dev-server --inline --hot --config=node_modules/laravel-mix/setup/webpack.config.js",
+    "prod": "cross-env NODE_ENV=production NODE_OPTIONS=--openssl-legacy-provider webpack --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
     "test": "cross-env nyc ava --verbose --serial",
     "posttest": "cross-env nyc report --reporter=html"
   },
