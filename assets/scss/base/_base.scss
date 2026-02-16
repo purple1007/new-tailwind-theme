@@ -16,7 +16,7 @@ body {
 ::selection { @apply bg-primary-base text-primaryBg; }
 
 a {
-  @apply text-primary-base transition duration-100;
+  @apply text-accent-primary transition duration-100;
   &:hover { @apply  text-primary-700 no-underline transition duration-100; }
 }
 

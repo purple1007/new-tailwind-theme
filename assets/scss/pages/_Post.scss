@@ -2,7 +2,7 @@
   &__detail { @apply text-brown-500; }
 
   &__title {
-    @apply text-3xl text-primary-base font-sans mb-2 font-bold pt-3 md:pt-0;
+    @apply text-3xl text-accent-primary font-sans mb-2 font-bold pt-3 md:pt-0;
   }
 
   &__thumbnail { 
@@ -17,14 +17,14 @@
     // 標題
     & h1,h2,h3,h4,h5,h6 { 
       & code {
-        @apply bg-brown-200 bg-opacity-50 py-0.5 px-1.5 text-primary-base font-mono rounded-sm;
+        @apply bg-brown-200 bg-opacity-50 py-0.5 px-1.5 text-accent-primary font-mono rounded-sm;
       }
       @apply font-bold font-sans mb-2; 
     }
     & h1 { @apply text-3xl mt-4; }
 
     & h2 {
-      @apply text-2xl border-b border-brown-200 text-primary-base pb-1 mt-5 mb-3;
+      @apply text-2xl border-b border-brown-200 text-accent-primary pb-1 mt-5 mb-3;
     }
     & h3 { @apply text-xl mt-5 mb-2; }
     & h4 { @apply text-lg mt-2; }
@@ -52,7 +52,7 @@
 
     // 程式碼
     & p > code, & li > code { 
-      @apply bg-brown-200 bg-opacity-50 py-0.5 px-1.5 text-sm text-primary-base font-mono rounded-sm;
+      @apply bg-brown-200 bg-opacity-50 py-0.5 px-1.5 text-sm text-accent-primary font-mono rounded-sm;
     }
     & .hcb_wrap.hcb_wrap {
       @apply my-3;
@@ -74,7 +74,7 @@
 
     // 引文
     & blockquote {
-      @apply border-l-4 border-primary-600 bg-brown-100 py-3 px-4 my-3 text-primary-base;
+      @apply border-l-4 border-primary-600 bg-brown-100 py-3 px-4 my-3 text-accent-primary;
     }
     & blockquote.custom_quote, .wp-block-pullquote > blockquote {
       @apply italic font-sans font-bold border-0 bg-opacity-0 p-0 my-5 py-4;

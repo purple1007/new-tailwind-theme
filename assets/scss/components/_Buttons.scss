@@ -8,7 +8,7 @@
     @apply text-primaryBg no-underline not-italic bg-primary-700;
   }
   &__outline {
-    @apply rounded-full font-normal text-base transition-all duration-100 bg-brown-100 text-primary-base border border-solid border-primary-base;
+    @apply rounded-full font-normal text-base transition-all duration-100 bg-brown-100 text-accent-primary border border-solid border-primary-base;
     padding: calc(0.5rem - 1px) calc(1rem - 1px);
   }
 }
