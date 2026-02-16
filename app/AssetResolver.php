@@ -48,11 +48,12 @@ class AssetResolver {
 	 */
 	private static function get_manifest() {
 		if ( ! self::$manifest ) {
-			// local 
-			// $manifest = get_stylesheet_directory() . '/build/local-manifest.json';
-
-			// production
-			$manifest = get_stylesheet_directory() . '/build/mix-manifest.json';
+			// 開發時用 local-manifest（無 hash），WordPress 才會載入 webpack dev 持續更新的 app.css
+			$local = get_stylesheet_directory() . '/build/local-manifest.json';
+			$prod  = get_stylesheet_directory() . '/build/mix-manifest.json';
+			$manifest = ( defined( 'WP_DEBUG' ) && WP_DEBUG && file_exists( $local ) )
+				? $local
+				: $prod;
 
 			if (
 				$map = file_get_contents( $manifest ) and
