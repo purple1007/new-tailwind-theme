@@ -133,6 +133,28 @@
       }
     }
 
+    // 表格
+    & .wp-block-table {
+      border: none;
+      box-shadow: none;
+      outline: rgb(217, 203, 186) solid 1px;
+      outline-offset: -1px;
+      @apply  rounded overflow-hidden;
+      & table.has-fixed-layout {
+        @apply border-none;
+      }
+      & td {
+          @apply border border-brown-300 p-2 ;
+        }
+      &::before {
+        content: '';
+        @apply absolute top-0 left-0 right-0 bottom-0 border border-brown-300;
+        border-radius: inherit; 
+        pointer-events: none; 
+        z-index: 1;
+      }
+    }
+    
     // 詳細資料
     & .wp-block-details {
       @apply bg-brown-100 px-3 pt-2;
