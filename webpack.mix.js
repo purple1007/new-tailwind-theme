@@ -70,6 +70,7 @@ if (mix.inProduction()) {
             './includes/**/*.php',
             './app/**/*.php',
             './assets/js/**/*.js',
+            './assets/scss/**/*.scss',
         ],
         safelist: {
             greedy: [
@@ -82,6 +83,16 @@ if (mix.inProduction()) {
                 /^wp-block/,
                 /^gallery/,
                 /^lightbox/,
+                /^menu-/,
+                /^sub-menu/,
+                /^page-numbers/,
+                /^screen-reader/,
+                /^widget_/,
+                /^custom_sub/,
+                /^mfp-/,
+                /^rl-/,
+                /^hcb_/,
+                /^toc_/,
             ],
         },
     });
