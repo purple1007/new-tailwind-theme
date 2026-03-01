@@ -47,7 +47,8 @@
        data-event-action="Click"
        data-event-label="More posts"
     >
-      More posts
+      <span class="button__slide-layer">More posts</span>
+      <span class="button__overlay-layer" aria-hidden="true">More posts</span>
     </a>
   </div>
 </section>
