@@ -139,7 +139,7 @@
       box-shadow: none;
       outline: rgb(217, 203, 186) solid 1px;
       outline-offset: -1px;
-      @apply  rounded overflow-hidden;
+      @apply  rounded overflow-hidden relative;
       & table.has-fixed-layout {
         @apply border-none;
       }
