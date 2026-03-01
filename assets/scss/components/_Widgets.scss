@@ -23,7 +23,7 @@ $module: '.custom_widget';
 
 #{$module}.widget_tag_cloud {
   a {
-    @apply px-2 py-0 mb-1 bg-brown-100 inline-block border border-brown-100 rounded-xl;
+    @apply px-2 pb-0 pt-[2px] mb-1 bg-brown-200 inline-block border border-brown-100 rounded-xl;
     font-size: .7rem !important;
 
     &:hover {

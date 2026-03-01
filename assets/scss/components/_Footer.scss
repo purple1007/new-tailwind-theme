@@ -1,8 +1,8 @@
 .footer {
-  @apply bg-brown-100 pt-10 pb-5 md:py-10 relative;
+  @apply bg-brown-200 pt-10 pb-5 md:py-10 relative;
 
   a:hover {
-    @apply text-primary-base no-underline; 
+    @apply text-accent-primary no-underline; 
   }
 
   &__container {
@@ -15,7 +15,7 @@
 
   &__contact {
     h1 {
-      @apply text-4xl font-sans font-extrabold text-primary-base mb-3 md:mb-5;
+      @apply text-4xl font-sans font-extrabold text-accent-primary mb-3 md:mb-5;
     }
 
     a { @apply text-black font-light; }
