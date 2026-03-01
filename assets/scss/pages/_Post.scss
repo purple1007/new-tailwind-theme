@@ -121,7 +121,7 @@
 
     // 大綱樣式
     & #toc_container {
-      @apply bg-brown-100 border-none text-black px-6 py-4 mb-8;
+      @apply bg-brown-200 border-none text-black px-6 py-4 mb-8;
 
       & ul.toc_list > li {
         @apply mb-1;
