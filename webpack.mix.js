@@ -33,7 +33,34 @@ if (local.proxy) {
 
 mix.js('assets/js/app.js', 'js');
 mix.sass('assets/scss/app.scss', 'css')
-    .options({ processCssUrls: false, postCss: [require('tailwindcss')] });
+    .options({
+        processCssUrls: false,
+        postCss: [require('tailwindcss')],
+    });
+
+mix.override((config) => {
+    const findSassLoaders = (obj) => {
+        if (!obj) return;
+        if (Array.isArray(obj)) {
+            obj.forEach(item => findSassLoaders(item));
+            return;
+        }
+        if (typeof obj === 'object') {
+            if (obj.loader && typeof obj.loader === 'string' && obj.loader.includes('sass-loader')) {
+                obj.options = obj.options || {};
+                obj.options.api = 'modern-compiler';
+                obj.options.sassOptions = {
+                    ...(obj.options.sassOptions || {}),
+                    silenceDeprecations: ['import'],
+                };
+            }
+            if (obj.use) findSassLoaders(obj.use);
+            if (obj.oneOf) findSassLoaders(obj.oneOf);
+            if (obj.rules) findSassLoaders(obj.rules);
+        }
+    };
+    config.module.rules.forEach(findSassLoaders);
+});
 
 if (mix.inProduction()) {
     mix.purgeCss({
