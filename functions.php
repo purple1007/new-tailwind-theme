@@ -82,6 +82,20 @@ require get_stylesheet_directory() . '/includes/scripts-and-styles.php';
   }
   add_action( 'widgets_init', 'home_description_widget' );
 
+  function case_notes_widget() {
+    register_sidebar( array(
+        'name' => __( '首頁 Case Notes 簡介區塊'),
+        'id' => 'case_notes_widget',
+        'title' => 'case_notes_widget',
+        'description' => __( '將會放在首頁 Case Notes 標題底下，建議使用文字小工具。將不會顯示小工具標題，僅會顯示內文。'),
+        'before_widget' => '<div id="%1$s" class="case_notes__description %2$s">',
+        'after_widget'  => '</div>',
+        'before_title'  => '<h3 class="custom_widget__title">',
+        'after_title'   => '</h3>',
+      ) );
+  }
+  add_action( 'widgets_init', 'case_notes_widget' );
+
   
 
   

@@ -7,21 +7,25 @@ require('laravel-mix-purgecss');
 const HASH_LENGTH = 6;
 
 mix.setPublicPath('./build');
+mix.disableNotifications();
 
 mix.webpackConfig({
     externals: {
         "jquery": "jQuery",
-    }
+    },
+    watchOptions: {
+        ignored: ['**/node_modules/**', '**/build/**'],
+    },
 });
 
 if (local.proxy) {
     mix.browserSync({
         proxy: local.proxy,
         injectChanges: false,
+        notify: false,
         open: false,
         reloadDelay: 300,
         files: [
-            'build/**/*.{css,js}',
             'templates/**/*.php',
             'includes/**/*.php',
             'app/**/*.php',
@@ -35,8 +39,23 @@ mix.js('assets/js/app.js', 'js');
 mix.sass('assets/scss/app.scss', 'css')
     .options({
         processCssUrls: false,
-        postCss: [require('tailwindcss')],
+        postCss: [require('@tailwindcss/postcss')],
     });
+
+if (!mix.inProduction()) {
+    mix.then(() => {
+        const manifestPath = path.resolve(__dirname, 'build/local-manifest.json');
+        const manifest = {
+            '/js/app.js': '/js/app.js',
+            '/css/app.css': '/css/app.css',
+        };
+        const content = JSON.stringify(manifest, null, 4) + '\n';
+
+        if (!fs.existsSync(manifestPath) || fs.readFileSync(manifestPath, 'utf8') !== content) {
+            fs.writeFileSync(manifestPath, content);
+        }
+    });
+}
 
 mix.override((config) => {
     const findSassLoaders = (obj) => {

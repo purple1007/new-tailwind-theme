@@ -17,7 +17,7 @@
     // 標題
     & h1,h2,h3,h4,h5,h6 { 
       & code {
-        @apply bg-brown-200 bg-opacity-50 py-0.5 px-1.5 text-accent-primary font-mono rounded-sm;
+        @apply bg-brown-200/50 py-0.5 px-1.5 text-accent-primary font-mono rounded-sm;
       }
       @apply font-bold font-sans mb-2; 
     }
@@ -52,7 +52,7 @@
 
     // 程式碼
     & p > code, & li > code { 
-      @apply bg-brown-200 bg-opacity-50 py-0.5 px-1.5 text-sm text-accent-primary font-mono rounded-sm;
+      @apply bg-brown-200/50 py-0.5 px-1.5 text-sm text-accent-primary font-mono rounded-sm;
     }
     & .hcb_wrap.hcb_wrap {
       @apply my-3;
@@ -77,7 +77,7 @@
       @apply border-l-4 border-primary-600 bg-brown-100 py-3 px-4 my-3 text-accent-primary;
     }
     & blockquote.custom_quote, .wp-block-pullquote > blockquote {
-      @apply italic font-sans font-bold border-0 bg-opacity-0 p-0 my-5 py-4;
+      @apply italic font-sans font-bold border-0 bg-transparent p-0 my-5 py-4;
       & p { @apply text-xl ; }
     }
     & .wp-block-pullquote {

@@ -1,16 +1,15 @@
 // base
-@import "~tailwindcss/base";
+@config "../../tailwind.config.js";
+@import "tailwindcss";
 @import "base/index";
 
 // components
-@import "~tailwindcss/components";
 @import "components/index";
 
 // pages
 @import "pages/index";
 
 // utilities
-@import "~tailwindcss/utilities";
 
 // plugin
 @import "plugin/index";
