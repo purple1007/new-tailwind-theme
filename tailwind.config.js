@@ -4,7 +4,7 @@ module.exports = {
   content: [
       './*.php',
       './templates/**/*.php',
-      './build/js/**/*.js',
+      './assets/js/**/*.js',
       './assets/scss/**/*.scss',  // @apply 用的 class 也要掃到才會輸出
   ],
   theme: {
