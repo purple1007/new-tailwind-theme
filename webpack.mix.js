@@ -5,8 +5,9 @@ const local = require('./assets/js/utils/local-config');
 require('laravel-mix-purgecss');
 
 const HASH_LENGTH = 6;
+const isProduction = mix.inProduction();
 
-mix.setPublicPath('./build');
+mix.setPublicPath(isProduction ? './build' : './build/local');
 mix.disableNotifications();
 
 mix.webpackConfig({
@@ -42,14 +43,16 @@ mix.sass('assets/scss/app.scss', 'css')
         postCss: [require('@tailwindcss/postcss')],
     });
 
-if (!mix.inProduction()) {
+if (!isProduction) {
     mix.then(() => {
         const manifestPath = path.resolve(__dirname, 'build/local-manifest.json');
         const manifest = {
-            '/js/app.js': '/js/app.js',
-            '/css/app.css': '/css/app.css',
+            '/js/app.js': '/local/js/app.js',
+            '/css/app.css': '/local/css/app.css',
         };
         const content = JSON.stringify(manifest, null, 4) + '\n';
+
+        fs.mkdirSync(path.dirname(manifestPath), { recursive: true });
 
         if (!fs.existsSync(manifestPath) || fs.readFileSync(manifestPath, 'utf8') !== content) {
             fs.writeFileSync(manifestPath, content);
@@ -81,7 +84,7 @@ mix.override((config) => {
     config.module.rules.forEach(findSassLoaders);
 });
 
-if (mix.inProduction()) {
+if (isProduction) {
     mix.purgeCss({
         content: [
             './*.php',

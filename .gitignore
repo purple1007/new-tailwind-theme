@@ -8,6 +8,7 @@ local.json
 # build
 !build/
 build/local-manifest.json
+build/local/
 build/js/app.js
 build/css/app.css
 

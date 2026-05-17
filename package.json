@@ -10,6 +10,8 @@
     "dev": "mix watch",
     "hmr": "mix watch --hot",
     "prod": "mix --production",
+    "postprod": "npm run check:manifest",
+    "check:manifest": "node scripts/validate-production-manifest.js",
     "test": "cross-env nyc ava --verbose --serial",
     "posttest": "cross-env nyc report --reporter=html"
   },
