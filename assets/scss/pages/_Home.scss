@@ -29,7 +29,7 @@
     }
 
     &__section {
-      @apply pb-16 pt-8 border-black border-b;
+      @apply pb-16 pt-8 ;
 
       & > h3 {
         @apply mb-2 text-brown-400 font-sans font-extrabold;
@@ -57,6 +57,72 @@
       &__column {
         @apply md:mb-10;
       }
+    }
+  }
+
+  .case_notes {
+    @apply mt-5;
+
+    &__panel {
+      @apply p-0;
+    }
+
+    &__content {
+      @apply text-type-primary;
+    }
+
+    &__description {
+      @apply max-w-3xl;
+
+      p,
+      li {
+        @apply mb-3 leading-6;
+      }
+
+      p:last-child,
+      li:last-child {
+        @apply mb-0;
+      }
+
+      a {
+        @apply underline decoration-2 underline-offset-4 decoration-primary-200;
+      }
+
+      a:hover {
+        @apply decoration-primary-700;
+      }
+    }
+
+    &__topics {
+      @apply grid gap-10 mt-10 pl-0 list-none text-type-primary font-sans md:grid-cols-3 md:gap-12;
+    }
+
+    &__topic {
+      @apply border-t border-brown-200 pt-6 list-none;
+    }
+
+    &__topic-header {
+      @apply flex items-start justify-between gap-4 mb-5;
+
+      h3 {
+        @apply text-lg text-type-primary font-bold leading-tight;
+      }
+
+      span {
+        @apply text-sm text-brown-400;
+      }
+    }
+
+    &__illustration {
+      @apply flex items-center justify-center h-28 mb-7;
+    }
+
+    &__illustration img {
+      @apply block max-w-full max-h-full;
+    }
+
+    &__topic p {
+      @apply text-sm leading-6 text-type-primary;
     }
   }
 }
