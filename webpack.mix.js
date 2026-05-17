@@ -39,7 +39,7 @@ mix.js('assets/js/app.js', 'js');
 mix.sass('assets/scss/app.scss', 'css')
     .options({
         processCssUrls: false,
-        postCss: [require('tailwindcss')],
+        postCss: [require('@tailwindcss/postcss')],
     });
 
 if (!mix.inProduction()) {
